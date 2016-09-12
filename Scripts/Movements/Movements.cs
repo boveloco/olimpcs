@@ -4,6 +4,7 @@ using System.Collections;
 public class Movements : MonoBehaviour {
 
     public float speed = 1.0f;
+    public int damage = 10;
 
     // Use this for initialization
     void Start () {
@@ -17,6 +18,12 @@ public class Movements : MonoBehaviour {
 
             if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
                 transform.Translate(Vector3.right * speed * Time.deltaTime);
+
+    }
+
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+
     }
 
 }

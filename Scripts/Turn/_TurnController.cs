@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class TurnController : MonoBehaviour {
+public class _TurnController : MonoBehaviour {
 
 
     public Text timer;
@@ -44,7 +44,7 @@ public class TurnController : MonoBehaviour {
         return objects[turn];
     }
 
-    private TurnController controlObjects()
+    private _TurnController controlObjects()
     {
         lastTurn = turn;
 
