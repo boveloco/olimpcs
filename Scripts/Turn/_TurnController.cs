@@ -4,6 +4,7 @@ using System.Collections;
 
 public class _TurnController : MonoBehaviour {
 
+    public EasyCamera2D.EasyCamera2D camera;
 
     public Text timer;
     private GameObject[] objects;
@@ -21,7 +22,7 @@ public class _TurnController : MonoBehaviour {
 
         foreach (GameObject o in objects)
         {
-            o.GetComponent<Movements>().enabled = false;
+            o.GetComponent<_AnimacaoAlisson>().enabled = false;
         }
 
         changeTurn();
@@ -30,7 +31,7 @@ public class _TurnController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             changeTurn();
         }
@@ -40,7 +41,10 @@ public class _TurnController : MonoBehaviour {
 
     private GameObject toogleObjectTransform(GameObject objecto, bool activate)
     {
-        objecto.GetComponent<Movements>().enabled = activate;
+        //controla a camera
+        camera.target = objects[turn].transform;
+
+        objecto.GetComponent<_AnimacaoAlisson>().enabled = activate;
         return objects[turn];
     }
 
@@ -71,6 +75,7 @@ public class _TurnController : MonoBehaviour {
 
     private void changeTurn()
     {
+        timeLeft = 30;
         controlObjects();
         toogleObjectTransform(objects[lastTurn], false);
         toogleObjectTransform(objects[turn], true);

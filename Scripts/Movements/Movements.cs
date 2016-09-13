@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Movements : MonoBehaviour {
+public class _Animacao : MonoBehaviour {
 
     public float speed = 1.0f;
     public int damage = 10;

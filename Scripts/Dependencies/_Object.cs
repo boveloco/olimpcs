@@ -3,8 +3,10 @@ using System.Collections;
 
 public class _Object : MonoBehaviour {
 
-    public readonly string DAMAGE = "__DAMAGE__";
-    public readonly string DEATH  = "__DEATH__";
+    public readonly string DAMAGE   = "__DAMAGE__";
+    public readonly string DEATH    = "__DEATH__";
+    public readonly string AK       = "__ATTACK__";
+    public readonly string IDLE     = "__IDLE__";
 
     public int lives = 100;
 
@@ -12,10 +14,6 @@ public class _Object : MonoBehaviour {
     void Start() {
         if (this.lives == 0)
             this.lives = 100;
-    }
-
-    // Update is called once per frame
-    void Update() {
     }
 
     public void ApplyDamage(int dmg)
