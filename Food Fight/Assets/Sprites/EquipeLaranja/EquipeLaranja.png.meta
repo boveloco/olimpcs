@@ -1,0 +1,1184 @@
+fileFormatVersion: 2
+guid: 3b3366b082f5bfe4abfc4ff5546ca558
+timeCreated: 1473367758
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: EquipeLaranja_0
+    21300002: EquipeLaranja_1
+    21300004: EquipeLaranja_2
+    21300006: EquipeLaranja_3
+    21300008: EquipeLaranja_4
+    21300010: EquipeLaranja_5
+    21300012: EquipeLaranja_6
+    21300014: EquipeLaranja_7
+    21300016: EquipeLaranja_8
+    21300018: EquipeLaranja_9
+    21300020: EquipeLaranja_10
+    21300022: EquipeLaranja_11
+    21300024: EquipeLaranja_12
+    21300026: EquipeLaranja_13
+    21300028: EquipeLaranja_14
+    21300030: EquipeLaranja_15
+    21300032: EquipeLaranja_16
+    21300034: EquipeLaranja_17
+    21300036: EquipeLaranja_18
+    21300038: EquipeLaranja_19
+    21300040: EquipeLaranja_20
+    21300042: EquipeLaranja_21
+    21300044: EquipeLaranja_22
+    21300046: EquipeLaranja_23
+    21300048: EquipeLaranja_24
+    21300050: EquipeLaranja_25
+    21300052: EquipeLaranja_26
+    21300054: EquipeLaranja_27
+    21300056: EquipeLaranja_28
+    21300058: EquipeLaranja_29
+    21300060: EquipeLaranja_30
+    21300062: EquipeLaranja_31
+    21300064: EquipeLaranja_32
+    21300066: EquipeLaranja_33
+    21300068: EquipeLaranja_34
+    21300070: EquipeLaranja_35
+    21300072: EquipeLaranja_36
+    21300074: EquipeLaranja_37
+    21300076: EquipeLaranja_38
+    21300078: EquipeLaranja_39
+    21300080: EquipeLaranja_40
+    21300082: EquipeLaranja_41
+    21300084: EquipeLaranja_42
+    21300086: EquipeLaranja_43
+    21300088: EquipeLaranja_44
+    21300090: EquipeLaranja_45
+    21300092: EquipeLaranja_46
+    21300094: EquipeLaranja_47
+    21300096: EquipeLaranja_48
+    21300098: EquipeLaranja_49
+    21300100: EquipeLaranja_50
+    21300102: EquipeLaranja_51
+    21300104: EquipeLaranja_52
+    21300106: EquipeLaranja_53
+    21300108: EquipeLaranja_54
+    21300110: EquipeLaranja_55
+    21300112: EquipeLaranja_56
+    21300114: EquipeLaranja_57
+    21300116: EquipeLaranja_58
+    21300118: EquipeLaranja_59
+    21300120: EquipeLaranja_60
+    21300122: EquipeLaranja_61
+    21300124: EquipeLaranja_62
+    21300126: EquipeLaranja_63
+    21300128: EquipeLaranja_64
+    21300130: EquipeLaranja_65
+    21300132: EquipeLaranja_66
+    21300134: EquipeLaranja_67
+    21300136: EquipeLaranja_68
+    21300138: EquipeLaranja_69
+    21300140: EquipeLaranja_70
+    21300142: EquipeLaranja_71
+    21300144: EquipeLaranja_72
+    21300146: EquipeLaranja_73
+    21300148: EquipeLaranja_74
+    21300150: EquipeLaranja_75
+    21300152: EquipeLaranja_76
+    21300154: EquipeLaranja_77
+    21300156: EquipeLaranja_83
+    21300158: EquipeLaranja_78
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 8192
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EquipeLaranja_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 2367
+        width: 86
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_1
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 2367
+        width: 75
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_2
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 2363
+        width: 75
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_3
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 2357
+        width: 94
+        height: 79
+      alignment: 9
+      pivot: {x: 0.33706796, y: 0.4657894}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_4
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 2357
+        width: 83
+        height: 79
+      alignment: 9
+      pivot: {x: 0.43487403, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_5
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 2352
+        width: 78
+        height: 80
+      alignment: 9
+      pivot: {x: 0.4538003, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2266
+        width: 71
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_7
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 2266
+        width: 78
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_8
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 2263
+        width: 82
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_9
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 2245
+        width: 88
+        height: 80
+      alignment: 9
+      pivot: {x: 0.36690938, y: 0.488739}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_10
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 2248
+        width: 103
+        height: 80
+      alignment: 9
+      pivot: {x: 0.31631914, y: 0.488739}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_11
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 2247
+        width: 142
+        height: 79
+      alignment: 9
+      pivot: {x: 0.22084367, y: 0.47719294}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2100
+        width: 106
+        height: 107
+      alignment: 9
+      pivot: {x: 0.58362055, y: 0.38402635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_13
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 2096
+        width: 86
+        height: 135
+      alignment: 9
+      pivot: {x: 0.48969287, y: 0.3161585}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_14
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 2097
+        width: 157
+        height: 83
+      alignment: 9
+      pivot: {x: 0.49435425, y: 0.49770862}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_15
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 2116
+        width: 115
+        height: 82
+      alignment: 9
+      pivot: {x: 0.2649791, y: 0.4560547}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_16
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 2113
+        width: 93
+        height: 86
+      alignment: 9
+      pivot: {x: 0.36437923, y: 0.51047534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_17
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 2120
+        width: 138
+        height: 79
+      alignment: 9
+      pivot: {x: 0.65668124, y: 0.45438588}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_18
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1926
+        width: 97
+        height: 124
+      alignment: 9
+      pivot: {x: 0.5365517, y: 0.335591}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_19
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 1926
+        width: 86
+        height: 155
+      alignment: 9
+      pivot: {x: 0.49999964, y: 0.28269437}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_20
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1917
+        width: 144
+        height: 89
+      alignment: 9
+      pivot: {x: 0.39535797, y: 0.5099604}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_21
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1954
+        width: 128
+        height: 130
+      alignment: 9
+      pivot: {x: 0.615078, y: 0.3036011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_22
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 1954
+        width: 127
+        height: 80
+      alignment: 9
+      pivot: {x: 0.4458743, y: 0.48772582}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_23
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 1942
+        width: 102
+        height: 154
+      alignment: 9
+      pivot: {x: 0.4156506, y: 0.27096915}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_24
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1801
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_25
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 1801
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_26
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1801
+        width: 87
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_27
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 1827
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_28
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 1825
+        width: 90
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_29
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 1831
+        width: 83
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_30
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1672
+        width: 86
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_31
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 1672
+        width: 86
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_32
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1672
+        width: 86
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_33
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1696
+        width: 96
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_34
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 1704
+        width: 127
+        height: 80
+      alignment: 9
+      pivot: {x: 0.62371683, y: 0.47545013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_35
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 1692
+        width: 113
+        height: 79
+      alignment: 9
+      pivot: {x: 0.5608321, y: 0.48757046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_36
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1542
+        width: 86
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_37
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 1542
+        width: 86
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_38
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1542
+        width: 86
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_39
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1572
+        width: 127
+        height: 79
+      alignment: 9
+      pivot: {x: 0.61598456, y: 0.48757046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_40
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 1559
+        width: 116
+        height: 92
+      alignment: 9
+      pivot: {x: 0.5592583, y: 0.45730457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_41
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 1569
+        width: 91
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_42
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1413
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_43
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 1413
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_44
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1413
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_45
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1431
+        width: 94
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_46
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 1429
+        width: 90
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_47
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1436
+        width: 82
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_48
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1287
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_49
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 1290
+        width: 86
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_50
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1284
+        width: 80
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_51
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 1307
+        width: 94
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_52
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 1303
+        width: 78
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_53
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1154
+        width: 73
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_54
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 1157
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_55
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1160
+        width: 85
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_56
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 1180
+        width: 107
+        height: 79
+      alignment: 9
+      pivot: {x: 0.58259827, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_57
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 1185
+        width: 97
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5404953, y: 0.38977548}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_58
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 1200
+        width: 85
+        height: 92
+      alignment: 9
+      pivot: {x: 0.47689497, y: 0.44663006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_59
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1024
+        width: 79
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_60
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1025
+        width: 74
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_61
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1027
+        width: 85
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_62
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 1041
+        width: 96
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_63
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 1042
+        width: 96
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_64
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 886
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_65
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 892
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_66
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 892
+        width: 97
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_67
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 787
+        width: 97
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_68
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 782
+        width: 96
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_69
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 784
+        width: 97
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_70
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 684
+        width: 97
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_71
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 683
+        width: 97
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_72
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 685
+        width: 97
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_73
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 591
+        width: 97
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_74
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 585
+        width: 105
+        height: 87
+      alignment: 9
+      pivot: {x: 0.475935, y: 0.44687134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_75
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 576
+        width: 114
+        height: 94
+      alignment: 9
+      pivot: {x: 0.49999946, y: 0.41280088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_76
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 423
+        width: 114
+        height: 100
+      alignment: 9
+      pivot: {x: 0.51108295, y: 0.41711122}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_77
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 416
+        width: 141
+        height: 124
+      alignment: 9
+      pivot: {x: 0.4999998, y: 0.3946388}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_83
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 5
+        width: 333
+        height: 200
+      alignment: 9
+      pivot: {x: 0.47051063, y: 0.043371335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeLaranja_78
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 271
+        width: 231
+        height: 122
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16998516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

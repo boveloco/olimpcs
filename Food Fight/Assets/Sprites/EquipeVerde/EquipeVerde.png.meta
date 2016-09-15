@@ -1,0 +1,1186 @@
+fileFormatVersion: 2
+guid: a655911d8c9c1a447ad5c826f0786b8c
+timeCreated: 1473628912
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: EquipeVerde_0
+    21300002: EquipeVerde_1
+    21300004: EquipeVerde_2
+    21300006: EquipeVerde_3
+    21300008: EquipeVerde_4
+    21300010: EquipeVerde_5
+    21300012: EquipeVerde_6
+    21300014: EquipeVerde_7
+    21300016: EquipeVerde_8
+    21300018: EquipeVerde_9
+    21300020: EquipeVerde_10
+    21300022: EquipeVerde_11
+    21300024: EquipeVerde_12
+    21300026: EquipeVerde_13
+    21300028: EquipeVerde_14
+    21300030: EquipeVerde_15
+    21300032: EquipeVerde_16
+    21300034: EquipeVerde_17
+    21300036: EquipeVerde_18
+    21300038: EquipeVerde_19
+    21300040: EquipeVerde_20
+    21300042: EquipeVerde_21
+    21300044: EquipeVerde_22
+    21300046: EquipeVerde_23
+    21300048: EquipeVerde_24
+    21300050: EquipeVerde_25
+    21300052: EquipeVerde_26
+    21300054: EquipeVerde_27
+    21300056: EquipeVerde_28
+    21300058: EquipeVerde_29
+    21300060: EquipeVerde_30
+    21300062: EquipeVerde_31
+    21300064: EquipeVerde_32
+    21300066: EquipeVerde_33
+    21300068: EquipeVerde_34
+    21300070: EquipeVerde_35
+    21300072: EquipeVerde_36
+    21300074: EquipeVerde_37
+    21300076: EquipeVerde_38
+    21300078: EquipeVerde_39
+    21300080: EquipeVerde_40
+    21300082: EquipeVerde_41
+    21300084: EquipeVerde_42
+    21300086: EquipeVerde_43
+    21300088: EquipeVerde_44
+    21300090: EquipeVerde_45
+    21300092: EquipeVerde_46
+    21300094: EquipeVerde_47
+    21300096: EquipeVerde_48
+    21300098: EquipeVerde_49
+    21300100: EquipeVerde_50
+    21300102: EquipeVerde_51
+    21300104: EquipeVerde_52
+    21300106: EquipeVerde_53
+    21300108: EquipeVerde_54
+    21300110: EquipeVerde_55
+    21300112: EquipeVerde_56
+    21300114: EquipeVerde_57
+    21300116: EquipeVerde_58
+    21300118: EquipeVerde_59
+    21300120: EquipeVerde_60
+    21300122: EquipeVerde_61
+    21300124: EquipeVerde_62
+    21300126: EquipeVerde_63
+    21300128: EquipeVerde_64
+    21300130: EquipeVerde_65
+    21300132: EquipeVerde_66
+    21300134: EquipeVerde_67
+    21300136: EquipeVerde_68
+    21300138: EquipeVerde_69
+    21300140: EquipeVerde_70
+    21300142: EquipeVerde_71
+    21300144: EquipeVerde_72
+    21300146: EquipeVerde_73
+    21300148: EquipeVerde_74
+    21300150: EquipeVerde_75
+    21300152: EquipeVerde_76
+    21300154: EquipeVerde_77
+    21300156: EquipeVerde_85
+    21300158: EquipeVerde_89
+    21300160: EquipeVerde_83
+    21300162: EquipeVerde_78
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 8192
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EquipeVerde_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 2431
+        width: 88
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_1
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 2431
+        width: 76
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_2
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 2430
+        width: 76
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_3
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 2427
+        width: 97
+        height: 81
+      alignment: 9
+      pivot: {x: 0.3860096, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_4
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 2426
+        width: 84
+        height: 82
+      alignment: 9
+      pivot: {x: 0.4521339, y: 0.47548768}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_5
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 2422
+        width: 79
+        height: 81
+      alignment: 9
+      pivot: {x: 0.4745522, y: 0.50000304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_6
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 2328
+        width: 73
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_7
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 2328
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_8
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 2330
+        width: 84
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_9
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 2311
+        width: 89
+        height: 82
+      alignment: 9
+      pivot: {x: 0.44352877, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_10
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 2314
+        width: 104
+        height: 82
+      alignment: 9
+      pivot: {x: 0.39368203, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_11
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 2313
+        width: 146
+        height: 81
+      alignment: 9
+      pivot: {x: 0.2796848, y: 0.48759103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_12
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 2114
+        width: 100
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5100517, y: 0.3258739}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_13
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 2115
+        width: 88
+        height: 158
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27096984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_14
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 2106
+        width: 147
+        height: 91
+      alignment: 9
+      pivot: {x: 0.26750734, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_15
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 2178
+        width: 119
+        height: 84
+      alignment: 9
+      pivot: {x: 0.33106136, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_16
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 2176
+        width: 94
+        height: 87
+      alignment: 9
+      pivot: {x: 0.44653255, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_17
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 2182
+        width: 141
+        height: 81
+      alignment: 9
+      pivot: {x: 0.7067412, y: 0.48759103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1966
+        width: 116
+        height: 112
+      alignment: 9
+      pivot: {x: 0.57798886, y: 0.3564028}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_19
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1962
+        width: 88
+        height: 139
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3119801}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_20
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 1963
+        width: 161
+        height: 84
+      alignment: 9
+      pivot: {x: 0.40634894, y: 0.50000143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_21
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 2011
+        width: 132
+        height: 134
+      alignment: 9
+      pivot: {x: 0.690377, y: 0.2899607}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_22
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 2011
+        width: 129
+        height: 82
+      alignment: 9
+      pivot: {x: 0.39870247, y: 0.5122606}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_23
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 2000
+        width: 104
+        height: 157
+      alignment: 9
+      pivot: {x: 0.39368203, y: 0.24742408}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_24
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1849
+        width: 86
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_25
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1849
+        width: 88
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_26
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1849
+        width: 88
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_27
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1864
+        width: 96
+        height: 81
+      alignment: 9
+      pivot: {x: 0.5628249, y: 0.48759103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_28
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 1861
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_29
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 1868
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_30
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1716
+        width: 88
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_31
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1716
+        width: 88
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_32
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1715
+        width: 88
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_33
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1729
+        width: 97
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_34
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 1737
+        width: 130
+        height: 81
+      alignment: 9
+      pivot: {x: 0.6701092, y: 0.48759103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_35
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 1724
+        width: 115
+        height: 81
+      alignment: 9
+      pivot: {x: 0.6398533, y: 0.5000015}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_36
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1582
+        width: 88
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_37
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1582
+        width: 88
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_38
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1582
+        width: 88
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_39
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 1600
+        width: 130
+        height: 82
+      alignment: 9
+      pivot: {x: 0.68557364, y: 0.48774236}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_40
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 1588
+        width: 119
+        height: 93
+      alignment: 9
+      pivot: {x: 0.6435988, y: 0.42434135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_41
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1598
+        width: 93
+        height: 85
+      alignment: 9
+      pivot: {x: 0.629703, y: 0.48817497}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_42
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1448
+        width: 88
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_43
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1448
+        width: 88
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_44
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1448
+        width: 88
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_45
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1442
+        width: 97
+        height: 81
+      alignment: 9
+      pivot: {x: 0.55181444, y: 0.5000015}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_46
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 1440
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_47
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 1447
+        width: 85
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_48
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1319
+        width: 88
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_49
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1322
+        width: 88
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_50
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1316
+        width: 82
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_51
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 1314
+        width: 96
+        height: 83
+      alignment: 9
+      pivot: {x: 0.55235356, y: 0.5000015}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_52
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1310
+        width: 80
+        height: 87
+      alignment: 9
+      pivot: {x: 0.4623062, y: 0.50000143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_53
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1182
+        width: 74
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_54
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1185
+        width: 88
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_55
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1189
+        width: 86
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_56
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 1183
+        width: 109
+        height: 81
+      alignment: 9
+      pivot: {x: 0.60144156, y: 0.48759103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_57
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 1189
+        width: 100
+        height: 99
+      alignment: 9
+      pivot: {x: 0.5904675, y: 0.40861988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_58
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1204
+        width: 88
+        height: 94
+      alignment: 9
+      pivot: {x: 0.602804, y: 0.4465332}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_59
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1048
+        width: 82
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_60
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1049
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_61
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1051
+        width: 88
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_62
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1045
+        width: 98
+        height: 81
+      alignment: 9
+      pivot: {x: 0.5615421, y: 0.47518206}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_63
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 1045
+        width: 99
+        height: 81
+      alignment: 9
+      pivot: {x: 0.55076766, y: 0.48759103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_64
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 907
+        width: 91
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_65
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 913
+        width: 89
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_66
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 913
+        width: 99
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_67
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 805
+        width: 99
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_68
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 799
+        width: 98
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_69
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 802
+        width: 99
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_70
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 699
+        width: 99
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_71
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 697
+        width: 99
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_72
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 700
+        width: 99
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_73
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 603
+        width: 99
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_74
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 596
+        width: 108
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_75
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 587
+        width: 116
+        height: 96
+      alignment: 9
+      pivot: {x: 0.500502, y: 0.4015185}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_76
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 430
+        width: 116
+        height: 101
+      alignment: 9
+      pivot: {x: 0.5072936, y: 0.38994515}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_77
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 422
+        width: 145
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5116697, y: 0.37244156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_83
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 0
+        width: 344
+        height: 205
+      alignment: 9
+      pivot: {x: 0.47954556, y: 0.03908396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EquipeVerde_78
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 270
+        width: 240
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
