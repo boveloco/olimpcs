@@ -70,7 +70,7 @@ public class _TurnController : MonoBehaviour {
         else
             timeLeft -= Time.deltaTime;
 
-        timer.text = timeLeft.ToString();
+        timer.text = ((int)timeLeft).ToString();
     }
 
     private void changeTurn()
