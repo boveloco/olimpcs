@@ -27,14 +27,16 @@ public class MenuScript : MonoBehaviour {
         Application.LoadLevel("menu_scene");
     }
 
+    public void clickWeapons()
+    {
+        menuWeapons.SetActive(!menuWeapons.active);
+    }
+
     public void clickPause()
     {
         Time.timeScale = (Time.timeScale -1) * -1;
         menuPause.SetActive(!menuPause.active);
     }
 
-    public void clickWeaponsMenu()
-    {
-        menuPause.SetActive(!menuWeapons.active);
-    }
+   
 }
