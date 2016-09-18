@@ -43,6 +43,11 @@ public class PlayersBehaviour : MonoBehaviour {
              //transform.Translate(Vector2.up * Time.deltaTime * force);
          }*/
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            shoot();
+        }
+
         Moviment();
     }
 
@@ -143,5 +148,10 @@ public class PlayersBehaviour : MonoBehaviour {
         }
 
         anim.SetBool("bazooka", weapon);
+    }
+
+    private void shoot()
+    {
+        SendMessage("Shoot", GetComponent<_Animate>().weapon);    
     }
 }

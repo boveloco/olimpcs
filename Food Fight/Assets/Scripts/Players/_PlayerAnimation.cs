@@ -7,6 +7,9 @@ public class _PlayerAnimation : MonoBehaviour
     public float forcesJump;
     public Transform ground;
 
+    //spawna as bullets
+    public Transform spawner;
+
     public int weapon;
     private bool isGround;
     public int life = 100;
@@ -24,6 +27,10 @@ public class _PlayerAnimation : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            shoot();
+        }
         Moviment();
         ToCatchWeapon();
         //SetDeath();
@@ -39,12 +46,14 @@ public class _PlayerAnimation : MonoBehaviour
             transform.eulerAngles = new Vector2(0, 0);
             transform.Translate(Vector2.right * speed * Time.deltaTime);
             anim.SetFloat("move1", Mathf.Abs(x));
+            GameObject.Find("Weapons").GetComponent<_ControlWeapons>().side = true;
         }
         else if (x < 0.0f)
         {
             transform.eulerAngles = new Vector2(0, 180);
             transform.Translate(Vector2.right * speed * Time.deltaTime);
             anim.SetFloat("move1", Mathf.Abs(x));
+            GameObject.Find("Weapons").GetComponent<_ControlWeapons>().side = false;
         }
 
         if (isGround && Input.GetKeyDown(KeyCode.W))
@@ -126,6 +135,15 @@ public class _PlayerAnimation : MonoBehaviour
 
     private void SetDestroy()
     {
-        Destroy(this.gameObject);
+        Destroy(gameObject);
+    }
+
+    private void shoot()
+    {
+        if (!GameObject.Find("TurnManager").GetComponent<_TurnController>().fire)
+        {
+            GameObject.Find("Weapons").GetComponent<_ControlWeapons>().instantiateWeapon(GetComponent<_Animate>().weapon, spawner);
+            GameObject.Find("TurnManager").GetComponent<_TurnController>().fire = true;
+        }
     }
 }

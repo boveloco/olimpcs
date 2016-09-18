@@ -10,6 +10,8 @@ public class _TurnController : MonoBehaviour {
     private GameObject[] objects;
     private GameObject[] objects2;
 
+    public bool fire = false;
+
     private bool team = false;
 
     private int lastTurn;
@@ -42,6 +44,8 @@ public class _TurnController : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
+        setTimer();
+
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             changeTurn();
@@ -53,9 +57,8 @@ public class _TurnController : MonoBehaviour {
         }
         if (objects2.Length < 1)
         {
-
+            
         }
-        setTimer();
 	    }
 
     private GameObject toogleObjectTransform(GameObject objecto, bool activate)
@@ -120,7 +123,7 @@ public class _TurnController : MonoBehaviour {
         timer.text = ((int)timeLeft).ToString();
     }
 
-    private void changeTurn()
+    public void changeTurn()
     {
         if (team)
         {
@@ -135,6 +138,13 @@ public class _TurnController : MonoBehaviour {
             toogleObjectTransform(objects2[turn2], true);
             team = !team;
         }
+        if (fire)
+            fire = !fire;
+    }
+
+    public void toogleFire()
+    {
+       fire = !fire;
     }
 
 }

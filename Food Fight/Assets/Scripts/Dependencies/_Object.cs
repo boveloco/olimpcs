@@ -16,6 +16,11 @@ public class _Object : MonoBehaviour {
             this.lives = 100;
     }
 
+    void Update()
+    {
+        //verifyPosition();
+    }
+
     public void ApplyDamage(int dmg)
     {
         lives -= dmg;
@@ -28,6 +33,16 @@ public class _Object : MonoBehaviour {
     void Del()
     {
         SendMessage("Animator", DEATH);
+        Destroy(gameObject);
+    }
+
+    private void verifyPosition()
+    {
+        if (transform.position.y < -4.0f )
+        {
+            Del();
+            GameObject.Find("TuntMananger").GetComponent<_TurnController>().changeTurn();
+        }
     }
 
 }
