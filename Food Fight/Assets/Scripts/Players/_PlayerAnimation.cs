@@ -12,7 +12,6 @@ public class _PlayerAnimation : MonoBehaviour
 
     public int weapon;
     private bool isGround;
-    public int life = 100;
 
     private Animator anim;
     private Rigidbody2D rb;
@@ -20,6 +19,9 @@ public class _PlayerAnimation : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
+        if(this.tag == "Player2")
+            transform.eulerAngles = new Vector2(0, 180);
+
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
 	}
@@ -108,13 +110,14 @@ public class _PlayerAnimation : MonoBehaviour
     private void FinishAnimation()
     {
         anim.SetBool("finishPunch1", false);
-        anim.SetBool("finishFing1", false);
         anim.SetBool("finishDanage1", false);
         anim.SetBool("toAttack1", false);
-        anim.SetBool("finishPunch1", true);
-        anim.SetBool("toKeepWeapon1", false);
-        anim.SetBool("finishFing1", true);
+        anim.SetBool("finishPunch1", false);
+        anim.SetBool("toKeepWeapon1", true);
+        anim.SetBool("finishFing1", false);
         anim.SetInteger("weapon1", -1);
+        anim.SetFloat("move1", 0.0f);
+        anim.SetBool("jump1", false);
     }
 
     public void SetDeath()
@@ -135,7 +138,7 @@ public class _PlayerAnimation : MonoBehaviour
 
     private void SetDestroy()
     {
-        Destroy(gameObject);
+        transform.gameObject.SetActive(false);
     }
 
     private void shoot()

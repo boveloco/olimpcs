@@ -33,7 +33,6 @@ public class _Object : MonoBehaviour {
     void Del()
     {
         SendMessage("Animator", DEATH);
-        Destroy(gameObject);
     }
 
     private void verifyPosition()
