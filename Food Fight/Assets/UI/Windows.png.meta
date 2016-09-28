@@ -1,11 +1,11 @@
 fileFormatVersion: 2
 guid: 7c68fe3c4edceae4a8393f4486e9a645
-timeCreated: 1474128097
+timeCreated: 1475095967
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Windows_0
-    21300002: Windows_1
+    21300002: Stage_Select
     21300004: Windows_2
     21300006: Windows_3
     21300008: Windows_4
@@ -18,8 +18,8 @@ TextureImporter:
     21300022: Windows_11
     21300024: Windows_12
     21300026: Windows_13
-    21300028: Windows_14
-    21300030: Windows_15
+    21300028: Night_Image
+    21300030: Sand_Image
     21300032: Windows_16
     21300034: Windows_17
     21300036: Windows_18
@@ -59,6 +59,12 @@ TextureImporter:
     21300104: Windows_52
     21300106: Windows_53
     21300108: Windows_54
+    21300110: Stage_Select
+    21300112: Pause
+    21300114: Weapons
+    21300116: Windows_55
+    21300118: Windows_56
+    21300120: Windows_14
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -116,18 +122,18 @@ TextureImporter:
         width: 1116
         height: 840
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Windows_1
+      name: Stage_Select
       rect:
         serializedVersion: 2
         x: 1218
-        y: 2947
+        y: 3001
         width: 1051
-        height: 840
+        height: 786
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,7 +148,7 @@ TextureImporter:
         width: 1050
         height: 720
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -155,7 +161,7 @@ TextureImporter:
         width: 718
         height: 146
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -168,7 +174,7 @@ TextureImporter:
         width: 718
         height: 168
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -181,12 +187,12 @@ TextureImporter:
         width: 530
         height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Pause_Menu
+      name: Pause
       rect:
         serializedVersion: 2
         x: 84
@@ -199,7 +205,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Weapons_Menu
+      name: Weapons
       rect:
         serializedVersion: 2
         x: 795
@@ -220,7 +226,7 @@ TextureImporter:
         width: 509
         height: 723
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -233,7 +239,7 @@ TextureImporter:
         width: 556
         height: 116
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -246,7 +252,7 @@ TextureImporter:
         width: 622
         height: 522
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -259,7 +265,7 @@ TextureImporter:
         width: 622
         height: 477
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -272,7 +278,7 @@ TextureImporter:
         width: 622
         height: 428
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -280,38 +286,38 @@ TextureImporter:
       name: Windows_13
       rect:
         serializedVersion: 2
-        x: 92
-        y: 966
-        width: 672
-        height: 962
+        x: 2643
+        y: 1745
+        width: 647
+        height: 321
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Windows_14
+      name: Night_Image
       rect:
         serializedVersion: 2
-        x: 933
-        y: 966
-        width: 673
-        height: 962
+        x: 4046
+        y: 2024
+        width: 200
+        height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Windows_15
+      name: Sand_Image
       rect:
         serializedVersion: 2
-        x: 1782
-        y: 966
-        width: 672
-        height: 962
+        x: 4440
+        y: 2024
+        width: 207
+        height: 119
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -319,12 +325,12 @@ TextureImporter:
       name: Windows_16
       rect:
         serializedVersion: 2
-        x: 2643
-        y: 1745
-        width: 647
-        height: 321
+        x: 92
+        y: 966
+        width: 672
+        height: 962
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -332,12 +338,12 @@ TextureImporter:
       name: Windows_17
       rect:
         serializedVersion: 2
-        x: 3507
-        y: 1758
-        width: 326
-        height: 223
+        x: 933
+        y: 966
+        width: 673
+        height: 962
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -345,12 +351,12 @@ TextureImporter:
       name: Windows_18
       rect:
         serializedVersion: 2
-        x: 2659
-        y: 1023
-        width: 617
-        height: 655
+        x: 1782
+        y: 966
+        width: 672
+        height: 962
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -358,12 +364,12 @@ TextureImporter:
       name: Windows_19
       rect:
         serializedVersion: 2
-        x: 3344
-        y: 1582
-        width: 672
-        height: 140
+        x: 3507
+        y: 1758
+        width: 326
+        height: 223
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -371,12 +377,12 @@ TextureImporter:
       name: Windows_20
       rect:
         serializedVersion: 2
-        x: 3372
-        y: 1359
-        width: 161
-        height: 152
+        x: 2659
+        y: 1023
+        width: 617
+        height: 655
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -384,12 +390,12 @@ TextureImporter:
       name: Windows_21
       rect:
         serializedVersion: 2
-        x: 3550
-        y: 1390
-        width: 185
-        height: 173
+        x: 3344
+        y: 1582
+        width: 672
+        height: 140
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -397,12 +403,12 @@ TextureImporter:
       name: Windows_22
       rect:
         serializedVersion: 2
-        x: 3761
+        x: 3372
         y: 1359
-        width: 160
+        width: 161
         height: 152
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -410,12 +416,12 @@ TextureImporter:
       name: Windows_23
       rect:
         serializedVersion: 2
-        x: 3531
-        y: 1249
-        width: 276
-        height: 93
+        x: 3550
+        y: 1390
+        width: 185
+        height: 173
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -423,12 +429,12 @@ TextureImporter:
       name: Windows_24
       rect:
         serializedVersion: 2
-        x: 4144
-        y: 1166
-        width: 121
-        height: 121
+        x: 3761
+        y: 1359
+        width: 160
+        height: 152
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -436,12 +442,12 @@ TextureImporter:
       name: Windows_25
       rect:
         serializedVersion: 2
-        x: 4296
-        y: 1166
-        width: 105
-        height: 121
+        x: 3531
+        y: 1249
+        width: 276
+        height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -449,12 +455,12 @@ TextureImporter:
       name: Windows_26
       rect:
         serializedVersion: 2
-        x: 4432
-        y: 1159
-        width: 119
-        height: 131
+        x: 4144
+        y: 1166
+        width: 121
+        height: 121
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -462,12 +468,12 @@ TextureImporter:
       name: Windows_27
       rect:
         serializedVersion: 2
-        x: 4596
-        y: 1157
-        width: 195
-        height: 135
+        x: 4296
+        y: 1166
+        width: 105
+        height: 121
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -475,12 +481,12 @@ TextureImporter:
       name: Windows_28
       rect:
         serializedVersion: 2
-        x: 3531
-        y: 1147
-        width: 276
-        height: 93
+        x: 4432
+        y: 1159
+        width: 119
+        height: 131
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -488,12 +494,12 @@ TextureImporter:
       name: Windows_29
       rect:
         serializedVersion: 2
-        x: 3424
-        y: 966
-        width: 480
-        height: 148
+        x: 4596
+        y: 1157
+        width: 195
+        height: 135
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -501,12 +507,12 @@ TextureImporter:
       name: Windows_30
       rect:
         serializedVersion: 2
-        x: 4166
-        y: 1002
-        width: 126
-        height: 133
+        x: 3531
+        y: 1147
+        width: 276
+        height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -514,12 +520,12 @@ TextureImporter:
       name: Windows_31
       rect:
         serializedVersion: 2
-        x: 4342
-        y: 1000
-        width: 128
-        height: 118
+        x: 3424
+        y: 966
+        width: 480
+        height: 148
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -527,12 +533,12 @@ TextureImporter:
       name: Windows_32
       rect:
         serializedVersion: 2
-        x: 4508
-        y: 997
-        width: 135
-        height: 126
+        x: 4166
+        y: 1002
+        width: 126
+        height: 133
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -540,12 +546,12 @@ TextureImporter:
       name: Windows_33
       rect:
         serializedVersion: 2
-        x: 113
-        y: 73
-        width: 635
-        height: 786
+        x: 4342
+        y: 1000
+        width: 128
+        height: 118
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -553,12 +559,12 @@ TextureImporter:
       name: Windows_34
       rect:
         serializedVersion: 2
-        x: 928
-        y: 73
-        width: 635
-        height: 786
+        x: 4508
+        y: 997
+        width: 135
+        height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -566,12 +572,12 @@ TextureImporter:
       name: Windows_35
       rect:
         serializedVersion: 2
-        x: 1679
-        y: 113
-        width: 616
-        height: 720
+        x: 113
+        y: 73
+        width: 635
+        height: 786
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -579,12 +585,12 @@ TextureImporter:
       name: Windows_36
       rect:
         serializedVersion: 2
-        x: 2359
-        y: 793
-        width: 556
-        height: 116
+        x: 928
+        y: 73
+        width: 635
+        height: 786
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -592,12 +598,12 @@ TextureImporter:
       name: Windows_37
       rect:
         serializedVersion: 2
-        x: 3034
-        y: 705
-        width: 338
-        height: 123
+        x: 1679
+        y: 113
+        width: 616
+        height: 720
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -605,12 +611,12 @@ TextureImporter:
       name: Windows_38
       rect:
         serializedVersion: 2
-        x: 3403
-        y: 705
-        width: 335
-        height: 123
+        x: 2359
+        y: 793
+        width: 556
+        height: 116
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -618,12 +624,12 @@ TextureImporter:
       name: Windows_39
       rect:
         serializedVersion: 2
-        x: 3804
+        x: 3034
         y: 705
-        width: 335
+        width: 338
         height: 123
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -631,12 +637,12 @@ TextureImporter:
       name: Windows_40
       rect:
         serializedVersion: 2
-        x: 4170
+        x: 3403
         y: 705
-        width: 338
+        width: 335
         height: 123
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -644,12 +650,12 @@ TextureImporter:
       name: Windows_41
       rect:
         serializedVersion: 2
-        x: 2412
-        y: 213
-        width: 399
-        height: 530
+        x: 3804
+        y: 705
+        width: 335
+        height: 123
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -657,12 +663,12 @@ TextureImporter:
       name: Windows_42
       rect:
         serializedVersion: 2
-        x: 3034
-        y: 553
-        width: 511
-        height: 126
+        x: 4170
+        y: 705
+        width: 338
+        height: 123
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -670,12 +676,12 @@ TextureImporter:
       name: Windows_43
       rect:
         serializedVersion: 2
-        x: 3583
-        y: 553
-        width: 511
-        height: 126
+        x: 2412
+        y: 213
+        width: 399
+        height: 530
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -683,12 +689,12 @@ TextureImporter:
       name: Windows_44
       rect:
         serializedVersion: 2
-        x: 3285
-        y: 427
-        width: 512
+        x: 3034
+        y: 553
+        width: 511
         height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -696,12 +702,12 @@ TextureImporter:
       name: Windows_45
       rect:
         serializedVersion: 2
-        x: 3034
-        y: 273
+        x: 3583
+        y: 553
         width: 511
-        height: 125
+        height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -709,12 +715,12 @@ TextureImporter:
       name: Windows_46
       rect:
         serializedVersion: 2
-        x: 3583
-        y: 273
-        width: 511
-        height: 125
+        x: 3285
+        y: 427
+        width: 512
+        height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -722,12 +728,12 @@ TextureImporter:
       name: Windows_47
       rect:
         serializedVersion: 2
-        x: 4154
-        y: 346
-        width: 340
-        height: 59
+        x: 3034
+        y: 273
+        width: 511
+        height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -735,12 +741,12 @@ TextureImporter:
       name: Windows_48
       rect:
         serializedVersion: 2
-        x: 4529
-        y: 346
-        width: 339
-        height: 59
+        x: 3583
+        y: 273
+        width: 511
+        height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -748,12 +754,12 @@ TextureImporter:
       name: Windows_49
       rect:
         serializedVersion: 2
-        x: 4351
-        y: 279
+        x: 4154
+        y: 346
         width: 340
-        height: 57
+        height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -761,12 +767,12 @@ TextureImporter:
       name: Windows_50
       rect:
         serializedVersion: 2
-        x: 3027
-        y: 118
-        width: 513
-        height: 126
+        x: 4529
+        y: 346
+        width: 339
+        height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -774,12 +780,12 @@ TextureImporter:
       name: Windows_51
       rect:
         serializedVersion: 2
-        x: 3583
-        y: 118
-        width: 511
-        height: 126
+        x: 4351
+        y: 279
+        width: 340
+        height: 57
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -787,12 +793,12 @@ TextureImporter:
       name: Windows_52
       rect:
         serializedVersion: 2
-        x: 4149
-        y: 111
-        width: 511
+        x: 3027
+        y: 118
+        width: 513
         height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -800,12 +806,12 @@ TextureImporter:
       name: Windows_53
       rect:
         serializedVersion: 2
-        x: 1665
-        y: 0
-        width: 285
-        height: 105
+        x: 3583
+        y: 118
+        width: 511
+        height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -813,12 +819,51 @@ TextureImporter:
       name: Windows_54
       rect:
         serializedVersion: 2
+        x: 4149
+        y: 111
+        width: 511
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Windows_55
+      rect:
+        serializedVersion: 2
+        x: 1665
+        y: 0
+        width: 285
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Windows_56
+      rect:
+        serializedVersion: 2
         x: 2015
         y: 0
         width: 285
         height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Windows_14
+      rect:
+        serializedVersion: 2
+        x: 4521
+        y: 2000
+        width: 13
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

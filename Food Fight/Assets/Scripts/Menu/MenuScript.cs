@@ -19,7 +19,17 @@ public class MenuScript : MonoBehaviour {
     public void clickPlay()
     {
         Time.timeScale = 1;
+        Application.LoadLevel("stages_scene");
+    }
+
+    public void clickNight()
+    {
         Application.LoadLevel("noite_scene");
+    }
+
+    public void clickSand()
+    {
+       // Application.LoadLevel("sand_scene");
     }
 
     public void clickMenu()
