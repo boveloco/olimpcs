@@ -16,16 +16,13 @@ public class _TurnController : MonoBehaviour {
     public GameObject Orange;
     public GameObject Green;
 
-    private bool active1;
-    private bool active2;
 
     public bool fire = false;
 
     //false = orange
     private bool team = false;
 
-    private int lastTurn;
-    private int lastTurn2;
+
     private int turn    = 0;
     private int turn2   = 0;
 
@@ -33,7 +30,6 @@ public class _TurnController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        active1 = active2 = false;
         objects = new List<GameObject>();
         objects2 = new List<GameObject>();
 
@@ -47,8 +43,6 @@ public class _TurnController : MonoBehaviour {
         {
             objects2.Add(g);
         }
-        lastTurn = objects.Count -1;
-        lastTurn2 = objects2.Count -1;
 
         foreach (GameObject o in objects)
         {
@@ -99,7 +93,7 @@ public class _TurnController : MonoBehaviour {
             }
 
         }
-
+		objecto.GetComponent<_PlayerAnimation> ().enabled = true;
 		camera.target = objecto.transform;
 		return;
     }
@@ -118,28 +112,17 @@ public class _TurnController : MonoBehaviour {
 
         if (team)
         {
-            if (objects[turn].activeSelf)
+            if (turn >= objects.Count -1)
             {
-                lastTurn = turn;
-
-                if (turn >= objects.Count -1)
-                {
-                    turn = 0;
-                    return;
-                }
+                turn = 0;
+                return;
             }
         } else {
-
-            if (objects2[turn2].activeSelf)
+            if (turn2 >= objects2.Count -1)
             {
-                lastTurn2 = turn2;
-                if (turn2 >= objects2.Count -1)
-                {
-                    turn2 = 0;
-                    return;
-                }
+                turn2 = 0;
+                return;
             }
-                
         }
 
         if (team)
@@ -147,7 +130,6 @@ public class _TurnController : MonoBehaviour {
         else
             turn2++;
         return;
-
     }
 
     private void setTimer()
