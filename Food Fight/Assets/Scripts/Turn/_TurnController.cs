@@ -16,16 +16,13 @@ public class _TurnController : MonoBehaviour {
     public GameObject Orange;
     public GameObject Green;
 
-    private bool active1;
-    private bool active2;
 
     public bool fire = false;
 
     //false = orange
     private bool team = false;
 
-    private int lastTurn;
-    private int lastTurn2;
+
     private int turn    = 0;
     private int turn2   = 0;
 
@@ -33,7 +30,6 @@ public class _TurnController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        active1 = active2 = false;
         objects = new List<GameObject>();
         objects2 = new List<GameObject>();
 
@@ -47,8 +43,6 @@ public class _TurnController : MonoBehaviour {
         {
             objects2.Add(g);
         }
-        lastTurn = objects.Count -1;
-        lastTurn2 = objects2.Count -1;
 
         foreach (GameObject o in objects)
         {
@@ -64,7 +58,7 @@ public class _TurnController : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-
+		verifyEnd();
         setTimer();
 
 
@@ -83,6 +77,7 @@ public class _TurnController : MonoBehaviour {
             if (!o.activeSelf)
             {
                 objects.Remove(o);
+				toogleObjectTransform (objecto, activate);
                 return;
             }
 
@@ -93,23 +88,14 @@ public class _TurnController : MonoBehaviour {
             if (!p.activeSelf)
             {
                 objects2.Remove(p);
+				toogleObjectTransform (objecto, activate);
                 return;
             }
 
         }
-
-        if (team)
-        {
-            //controla a camera
-            camera.target = objects[turn].transform;
-
-            objecto.GetComponent<_PlayerAnimation>().enabled = activate;
-        } else {
-            //controla a camera
-            camera.target = objects2[turn2].transform;
-
-            objecto.GetComponent<_PlayerAnimation>().enabled = activate;
-        }
+		objecto.GetComponent<_PlayerAnimation> ().enabled = true;
+		camera.target = objecto.transform;
+		return;
     }
 
     private void controlObjects()
@@ -126,28 +112,17 @@ public class _TurnController : MonoBehaviour {
 
         if (team)
         {
-            if (objects[turn].activeSelf)
+            if (turn >= objects.Count -1)
             {
-                lastTurn = turn;
-
-                if (turn >= objects.Count -1)
-                {
-                    turn = 0;
-                    return;
-                }
+                turn = 0;
+                return;
             }
         } else {
-
-            if (objects2[turn2].activeSelf)
+            if (turn2 >= objects2.Count -1)
             {
-                lastTurn2 = turn2;
-                if (turn2 >= objects2.Count -1)
-                {
-                    turn2 = 0;
-                    return;
-                }
+                turn2 = 0;
+                return;
             }
-                
         }
 
         if (team)
@@ -155,7 +130,6 @@ public class _TurnController : MonoBehaviour {
         else
             turn2++;
         return;
-
     }
 
     private void setTimer()
@@ -198,16 +172,26 @@ public class _TurnController : MonoBehaviour {
 
     public void endGame()
     {
-        if (!active1)
+        if (team)
         {
-            Green.SetActive(false);
-            Orange.SetActive(true);
+			Green.SetActive(true);
+			Orange.SetActive(false);
         }
-        if (!active2)
+        else
         {
-            Orange.SetActive(false);
-            Green.SetActive(true);
+			Green.SetActive(false);
+			Orange.SetActive(true);
         }
     }
+
+	public void verifyEnd(){
+		if (objects.Count == 0) {
+			team = true;
+			endGame ();
+		} else if(objects2.Count == 0){
+			team = false;
+			endGame();
+		}
+	}
 
 }

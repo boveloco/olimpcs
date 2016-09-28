@@ -23,7 +23,6 @@ public class _ControlWeapons : MonoBehaviour {
     {
             bulletInstances[0] = (GameObject)Instantiate(types[type], t.position + t.right, Quaternion.Euler(new Vector3(0, 0, 1)));
             bulletInstances[0].GetComponent<Rigidbody2D>().velocity = (speed * t.right);
-            Rigidbody2D o = bulletInstances[0].GetComponent<Rigidbody2D>();
     }
 
     void Update()
