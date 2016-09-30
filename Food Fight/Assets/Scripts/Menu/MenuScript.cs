@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class MenuScript : MonoBehaviour {
 
@@ -7,8 +8,9 @@ public class MenuScript : MonoBehaviour {
     public GameObject menuWeapons;
 
 	// Use this for initialization
-	void Start () { 
-	}
+	void Start () {
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -24,12 +26,14 @@ public class MenuScript : MonoBehaviour {
 
     public void clickNight()
     {
+        Time.timeScale = 1;
         Application.LoadLevel("noite_scene");
     }
 
     public void clickSand()
     {
-       // Application.LoadLevel("sand_scene");
+        Time.timeScale = 1;
+        // Application.LoadLevel("sand_scene");
     }
 
     public void clickMenu()
