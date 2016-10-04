@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 7c68fe3c4edceae4a8393f4486e9a645
-timeCreated: 1475095967
+timeCreated: 1475616449
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -290,32 +290,6 @@ TextureImporter:
         y: 1745
         width: 647
         height: 321
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Night_Image
-      rect:
-        serializedVersion: 2
-        x: 4046
-        y: 2024
-        width: 200
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Sand_Image
-      rect:
-        serializedVersion: 2
-        x: 4440
-        y: 2024
-        width: 207
-        height: 119
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

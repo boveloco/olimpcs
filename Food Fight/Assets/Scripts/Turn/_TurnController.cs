@@ -22,14 +22,16 @@ public class _TurnController : MonoBehaviour {
     //false = orange
     private bool team = false;
 
-
     private int turn    = 0;
     private int turn2   = 0;
 
     private float timeLeft = 30;
 
-	// Use this for initialization
-	void Start () {
+    // timer
+    private float tim = 0.0f;
+    public bool flagTim = false;
+    // Use this for initialization
+    void Start () {
         objects = new List<GameObject>();
         objects2 = new List<GameObject>();
 
@@ -61,11 +63,16 @@ public class _TurnController : MonoBehaviour {
 		verifyEnd();
         setTimer();
 
+        if(flagTim)
+            tim += Time.deltaTime;
 
+        if (getTim(0.7f))
+            changeTurn();
 
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            changeTurn();
+            flagTim = true;
+            
         }
 	}
 
@@ -73,6 +80,7 @@ public class _TurnController : MonoBehaviour {
     {
         foreach (GameObject o in objects)
         {
+            o.GetComponent<_PlayerAnimation>().FinishAnimation();
             o.GetComponent<_PlayerAnimation>().enabled = false;
             if (!o.activeSelf)
             {
@@ -84,6 +92,7 @@ public class _TurnController : MonoBehaviour {
         }
         foreach (GameObject p in objects2)
         {
+            p.GetComponent<_PlayerAnimation>().FinishAnimation();
             p.GetComponent<_PlayerAnimation>().enabled = false;
             if (!p.activeSelf)
             {
@@ -136,8 +145,9 @@ public class _TurnController : MonoBehaviour {
     {
         if (timeLeft < 0)
         {
+            flagTim = true;
             timeLeft = 30;
-            changeTurn();
+            //changeTurn();
         }
         else
             timeLeft -= Time.deltaTime;
@@ -147,6 +157,7 @@ public class _TurnController : MonoBehaviour {
 
     public void changeTurn()
     {
+        Debug.Log(tim);
         if (team)
         {
             timeLeft = 30;
@@ -163,6 +174,7 @@ public class _TurnController : MonoBehaviour {
         }
         if (fire)
             fire = !fire;
+        
     }
 
     public void toogleFire()
@@ -193,5 +205,17 @@ public class _TurnController : MonoBehaviour {
 			endGame();
 		}
 	}
+
+    bool getTim(float timer)
+    {
+        if (tim >= timer)
+        {
+            flagTim = !flagTim;
+            tim = 0f;
+            return true;
+        }
+
+        return false;
+    }
 
 }

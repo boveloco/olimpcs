@@ -19,8 +19,8 @@ public class _Weapon : _Object {
             Instantiate(obj, transform.position, Quaternion.identity);
         }
 
-        GameObject.Find("TurnManager").GetComponent<_TurnController>().changeTurn();
         Destroy(gameObject);
+        GameObject.Find("TurnManager").GetComponent<_TurnController>().flagTim = true;
     }
 
     

@@ -16,11 +16,6 @@ public class _Object : MonoBehaviour {
             this.lives = 100;
     }
 
-    void Update()
-    {
-        //verifyPosition();
-    }
-
     public void ApplyDamage(int dmg)
     {
         lives -= dmg;
@@ -40,8 +35,18 @@ public class _Object : MonoBehaviour {
         if (transform.position.y < -4.0f )
         {
             Del();
-            GameObject.Find("TuntMananger").GetComponent<_TurnController>().changeTurn();
+            GameObject.Find("TurnManager").GetComponent<_TurnController>().flagTim = true;
+            Destroy(this);
+        }
+        if(transform.position.x < -140f || transform.position.x > -104f)
+        {
+            GameObject.Find("TurnManager").GetComponent<_TurnController>().flagTim = true;
+            Destroy(this);
         }
     }
 
+    void Update()
+    {
+        verifyPosition();
+    }
 }

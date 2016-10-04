@@ -107,7 +107,7 @@ public class _PlayerAnimation : MonoBehaviour
         anim.SetInteger("weapon1", -1);
     }
 
-    private void FinishAnimation()
+    public void FinishAnimation()
     {
         anim.SetBool("finishPunch1", false);
         anim.SetBool("finishDanage1", false);
