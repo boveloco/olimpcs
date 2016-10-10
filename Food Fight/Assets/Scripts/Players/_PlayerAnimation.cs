@@ -11,6 +11,10 @@ public class _PlayerAnimation : MonoBehaviour
     public Transform spawner;
 
     public int weapon;
+
+    public AudioClip audioDeath;
+    public AudioSource audioS;
+
     private bool isGround;
 
     private Animator anim;
@@ -123,6 +127,7 @@ public class _PlayerAnimation : MonoBehaviour
     public void SetDeath()
     {
         anim.SetBool("death1", true);
+        audioS.PlayOneShot(audioDeath, 1.0f);
     }
 
     public void Damage()

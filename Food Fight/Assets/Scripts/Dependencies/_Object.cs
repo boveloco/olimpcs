@@ -8,12 +8,11 @@ public class _Object : MonoBehaviour {
     public readonly string AK       = "__ATTACK__";
     public readonly string IDLE     = "__IDLE__";
 
-    public int lives = 100;
+    public int lives;
 
     // Use this for initialization
-    void Start() {
-        if (this.lives == 0)
-            this.lives = 100;
+    void Start()
+    {
     }
 
     public void ApplyDamage(int dmg)
