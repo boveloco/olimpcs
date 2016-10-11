@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿    using UnityEngine;
 using System.Collections;
 
 public class _PlayerAnimation : MonoBehaviour
@@ -21,7 +21,7 @@ public class _PlayerAnimation : MonoBehaviour
     private Rigidbody2D rb;
 
 	// Use this for initialization
-	void Start ()
+	void Start()
     {
         if(this.tag == "Player2")
             transform.eulerAngles = new Vector2(0, 180);
