@@ -14,12 +14,14 @@ public class _Weapon : _Object {
         {
             coll.gameObject.SendMessage("ApplyDamage", damage);
             Instantiate(obj, transform.position, Quaternion.identity);
-            audioS.PlayOneShot(audioExplosion, 1.0f);
+            if(audioS)
+                audioS.PlayOneShot(audioExplosion, 1.0f);
         }
         else if(coll.gameObject.tag == "Ground")
         {
             Instantiate(obj, transform.position, Quaternion.identity);
-            audioS.PlayOneShot(audioExplosion, 1.0f);
+            if(audioS)
+                audioS.PlayOneShot(audioExplosion, 1.0f);
         }
 
         Destroy(gameObject);

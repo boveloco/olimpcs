@@ -23,8 +23,9 @@ public class _ControlWeapons : MonoBehaviour {
     {
             bulletInstances[0] = (GameObject)Instantiate(types[type], t.position + t.right, t.rotation);
             bulletInstances[0].GetComponent<Rigidbody2D>().velocity = (speed * t.right);
-
-            GameObject.Find("TurnManager").GetComponent<_TurnController>().camera.target = bulletInstances[0].transform;
+            
+            if(bulletInstances[0].transform)
+                GameObject.Find("TurnManager").GetComponent<_TurnController>().camera.target = bulletInstances[0].transform;
     }
 
     void Update()

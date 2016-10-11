@@ -103,7 +103,8 @@ public class _TurnController : MonoBehaviour {
 
         }
 		objecto.GetComponent<_PlayerAnimation> ().enabled = true;
-		camera.target = objecto.transform;
+        if(objecto.transform)
+		    camera.target = objecto.transform;
 		return;
     }
 

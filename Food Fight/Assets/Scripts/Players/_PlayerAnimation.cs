@@ -1,6 +1,7 @@
 ﻿    using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(Animator))]
 public class _PlayerAnimation : MonoBehaviour
 {
     public float speed = 1.0f;
@@ -113,15 +114,18 @@ public class _PlayerAnimation : MonoBehaviour
 
     public void FinishAnimation()
     {
-        anim.SetBool("finishPunch1", false);
-        anim.SetBool("finishDanage1", false);
-        anim.SetBool("toAttack1", false);
-        anim.SetBool("finishPunch1", false);
-        anim.SetBool("toKeepWeapon1", true);
-        anim.SetBool("finishFing1", false);
-        anim.SetInteger("weapon1", -1);
-        anim.SetFloat("move1", 0.0f);
-        anim.SetBool("jump1", false);
+        if (anim)
+        {
+            anim.SetBool("finishPunch1", false);
+            anim.SetBool("finishDanage1", false);
+            anim.SetBool("toAttack1", false);
+            anim.SetBool("finishPunch1", false);
+            anim.SetBool("toKeepWeapon1", true);
+            anim.SetBool("finishFing1", false);
+            anim.SetInteger("weapon1", -1);
+            anim.SetFloat("move1", 0.0f);
+            anim.SetBool("jump1", false);
+        }
     }
 
     public void SetDeath()
