@@ -52,10 +52,6 @@ public class _ControlWeapons : MonoBehaviour {
 		bulletInstance.GetComponent<Rigidbody2D> ().AddForce (direction * force);
 	}
 
-	public void triggerGranadeExplosion(){
-		FindObjectOfType<_Granade> ().ApplyDamage (granade.GetComponent<_Granade>().damage);
-	}
-
 	void Update()
     {}
 }
