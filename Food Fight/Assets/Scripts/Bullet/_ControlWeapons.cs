@@ -5,29 +5,57 @@ public class _ControlWeapons : MonoBehaviour {
 
     public GameObject missile;
     public GameObject granade;
+	public GameObject machinegun;
     public int speed = 2;
     private GameObject[] types;
     public bool side = false;
-    GameObject[] bulletInstances;
+    GameObject bulletInstance;
 
     void Start()
     {
-        bulletInstances = new GameObject[10];
+		bulletInstance = new GameObject();
         types = new GameObject[3];
         types[0] = missile;
         types[1] = granade;
+		types[2] = machinegun;
     }
 
 
-    public void instantiateWeapon(int type, Transform t)
+	public void controlWeapons(int type, Transform T){
+		switch (type) {
+		case 0:
+			instantiateWeapon (type, T);
+			//addVelocity (T);
+			addForce(T.right, 250);
+			break;
+		case 1: 
+			instantiateWeapon (type, T);
+			addForce((T.right + T.up), 250);
+			break;
+		default:
+			return;
+		}
+	}
+
+    private void instantiateWeapon(int type, Transform t)
     {
-            bulletInstances[0] = (GameObject)Instantiate(types[type], t.position + t.right, t.rotation);
-            bulletInstances[0].GetComponent<Rigidbody2D>().velocity = (speed * t.right);
+            bulletInstance = (GameObject)Instantiate(types[type], t.position + t.right, t.rotation);
             
-            if(bulletInstances[0].transform)
-                GameObject.Find("TurnManager").GetComponent<_TurnController>().camera.target = bulletInstances[0].transform;
+            if(bulletInstance)
+                GameObject.Find("TurnManager").GetComponent<_TurnController>().camera.target = bulletInstance.transform;
     }
+	private void addVelocity(Transform t){
+		bulletInstance.GetComponent<Rigidbody2D>().velocity = (speed * t.right);
+	}
 
-    void Update()
+	private void addForce(Vector2 direction, float force){
+		bulletInstance.GetComponent<Rigidbody2D> ().AddForce (direction * force);
+	}
+
+	public void triggerGranadeExplosion(){
+		FindObjectOfType<_Granade> ().ApplyDamage (granade.GetComponent<_Granade>().damage);
+	}
+
+	void Update()
     {}
 }
