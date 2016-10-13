@@ -22,8 +22,8 @@ public class _Granade : _Weapon {
 			timFlag = false;
 			explode ();
 		}
-		if(gotoNextFlag)
-			goToNext ();
+//		if(gotoNextFlag)
+//			goToNext ();
 	}
 
 	void OnCollisionEnter2D(Collision2D coll){
@@ -33,7 +33,7 @@ public class _Granade : _Weapon {
 
 	void explode(){
 		Instantiate(obj, transform.position, Quaternion.identity);
-		gotoNextFlag = true;
+//		gotoNextFlag = true;
 		Destroy (gameObject);
 	}
 

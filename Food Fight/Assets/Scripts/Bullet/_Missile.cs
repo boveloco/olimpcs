@@ -29,7 +29,7 @@ public class _Missile : _Weapon {
 			ApplyDamage(damage);
 		}
 
-		goToNext ();
+//		goToNext ();
 		Destroy (gameObject);
 
 	}
