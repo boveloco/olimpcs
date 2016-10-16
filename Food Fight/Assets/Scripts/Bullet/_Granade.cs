@@ -5,11 +5,11 @@ public class _Granade : _Weapon {
 
 	private float tim;
 	private bool timFlag = false;
-	public new int damage = 50;
+    protected int timeToExplode = 2;
 
 	// Use this for initialization
 	void Start () {
-	
+	    damage = 50;
 	}
 	
 	// Update is called once per frame
@@ -17,7 +17,7 @@ public class _Granade : _Weapon {
 		if (timFlag) {
 			tim += Time.deltaTime;
 		}
-		if (tim >= 2) {
+		if (tim >= timeToExplode) {
 			tim = 0;
 			timFlag = false;
 			explode ();
@@ -40,4 +40,7 @@ public class _Granade : _Weapon {
 	public void TriggerExplosion(GameObject coll){
 		
 	}
+    protected new void OnDestroy()
+    {
+    }
 }

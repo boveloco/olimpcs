@@ -1,10 +1,14 @@
 fileFormatVersion: 2
 guid: ee5c57e21a47ec84ea221ae2de0f4bd0
-timeCreated: 1474136671
+timeCreated: 1476604605
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - missile: {fileID: 1000010200033688, guid: 9a4a5fc2cba615e4d8d697b15eafaca3, type: 2}
+  - granade: {fileID: 1000013388289844, guid: 3fab54d08d523aa45912067cb2219e74, type: 2}
+  - dinamite: {fileID: 1000014023386432, guid: d6d59f7e8bb6c844d9fc159b1a5bb539, type: 2}
+  - ak: {fileID: 1000010200033688, guid: 9a4a5fc2cba615e4d8d697b15eafaca3, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

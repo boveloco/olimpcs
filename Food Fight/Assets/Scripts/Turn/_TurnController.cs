@@ -6,12 +6,12 @@ using System.Collections.Generic;
 
 public class _TurnController : MonoBehaviour {
 
-    public EasyCamera2D.EasyCamera2D camera;
+    public new EasyCamera2D.EasyCamera2D camera;
 
     public Text timer;
 
-    private List<GameObject> objects;
-    private List<GameObject> objects2;
+    private List<GameObject> objects; //Laranja
+    private List<GameObject> objects2; //Verde
 
     public GameObject Orange;
     public GameObject Green;
@@ -19,11 +19,11 @@ public class _TurnController : MonoBehaviour {
 
     public bool fire = false;
 
-    //false = orange
+    //false = green
     private bool team = false;
 
-    private int turn    = 0;
-    private int turn2   = 0;
+    private int turn = 0;
+    private int turn2 = 0;
 
     private float timeLeft = 30;
 
@@ -31,7 +31,7 @@ public class _TurnController : MonoBehaviour {
     private float tim = 0.0f;
     public bool flagTim = false;
     // Use this for initialization
-    void Start () {
+    void Start() {
         objects = new List<GameObject>();
         objects2 = new List<GameObject>();
 
@@ -60,10 +60,10 @@ public class _TurnController : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-		verifyEnd();
+        verifyEnd();
         setTimer();
 
-        if(flagTim)
+        if (flagTim)
             tim += Time.deltaTime;
 
         if (getTim(0.7f))
@@ -72,9 +72,9 @@ public class _TurnController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             flagTim = true;
-            
+
         }
-	}
+    }
 
     private void toogleObjectTransform(GameObject objecto, bool activate)
     {
@@ -85,7 +85,7 @@ public class _TurnController : MonoBehaviour {
             if (!o.activeSelf)
             {
                 objects.Remove(o);
-				toogleObjectTransform (objecto, activate);
+                toogleObjectTransform(objecto, activate);
                 return;
             }
 
@@ -97,20 +97,20 @@ public class _TurnController : MonoBehaviour {
             if (!p.activeSelf)
             {
                 objects2.Remove(p);
-				toogleObjectTransform (objecto, activate);
+                toogleObjectTransform(objecto, activate);
                 return;
             }
 
         }
-		objecto.GetComponent<_PlayerAnimation> ().enabled = true;
-        if(objecto.transform)
-		    camera.target = objecto.transform;
-		return;
+        objecto.GetComponent<_PlayerAnimation>().enabled = true;
+        if (objecto.transform)
+            camera.target = objecto.transform;
+        return;
     }
 
     private void controlObjects()
     {
-        if(turn >= objects.Count - 1)
+        if (turn >= objects.Count - 1)
         {
             turn = objects.Count - 1;
         }
@@ -122,13 +122,13 @@ public class _TurnController : MonoBehaviour {
 
         if (team)
         {
-            if (turn >= objects.Count -1)
+            if (turn >= objects.Count - 1)
             {
                 turn = 0;
                 return;
             }
         } else {
-            if (turn2 >= objects2.Count -1)
+            if (turn2 >= objects2.Count - 1)
             {
                 turn2 = 0;
                 return;
@@ -175,37 +175,37 @@ public class _TurnController : MonoBehaviour {
         }
         if (fire)
             fire = !fire;
-        
+
     }
 
     public void toogleFire()
     {
-       fire = !fire;
+        fire = !fire;
     }
 
     public void endGame()
     {
         if (team)
         {
-			Green.SetActive(true);
-			Orange.SetActive(false);
+            Green.SetActive(true);
+            Orange.SetActive(false);
         }
         else
         {
-			Green.SetActive(false);
-			Orange.SetActive(true);
+            Green.SetActive(false);
+            Orange.SetActive(true);
         }
     }
 
-	public void verifyEnd(){
-		if (objects.Count == 0) {
-			team = true;
-			endGame ();
-		} else if(objects2.Count == 0){
-			team = false;
-			endGame();
-		}
-	}
+    public void verifyEnd() {
+        if (objects.Count == 0) {
+            team = true;
+            endGame();
+        } else if (objects2.Count == 0) {
+            team = false;
+            endGame();
+        }
+    }
 
     bool getTim(float timer)
     {
@@ -219,4 +219,19 @@ public class _TurnController : MonoBehaviour {
         return false;
     }
 
+    public GameObject getPlayerOnTurn()
+    {
+        if (team)
+        {
+            if (turn2 == 0)
+                return objects2[objects2.Count - 1].gameObject;
+            return objects2[turn2 -1].gameObject;
+        }
+        else
+        {
+            if (turn == 0)
+                return objects[objects.Count -1].gameObject;
+            return objects[turn -1].gameObject;
+        }
+    }
 }

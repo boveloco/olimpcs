@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class _Weapon : _Object {
-    public int type = 0;
     public int damage = 10;
     public GameObject obj;
     public AudioClip audioExplosion;
@@ -14,20 +13,23 @@ public class _Weapon : _Object {
         {
             coll.gameObject.SendMessage("ApplyDamage", damage);
             Instantiate(obj, transform.position, Quaternion.identity);
-            if(audioS)
+            if (audioS)
                 audioS.PlayOneShot(audioExplosion, 1.0f);
         }
-        else if(coll.gameObject.tag == "Ground")
+        else if (coll.gameObject.tag == "Ground")
         {
             Instantiate(obj, transform.position, Quaternion.identity);
-            if(audioS)
+            if (audioS)
                 audioS.PlayOneShot(audioExplosion, 1.0f);
         }
 
         Destroy(gameObject);
-        GameObject.Find("TurnManager").GetComponent<_TurnController>().flagTim = true;
+
     }
 
-    
+    protected void OnDestroy()
+    {
+        GameObject.Find("TurnManager").GetComponent<_TurnController>().flagTim = true;
+    }
 
 }

@@ -3,16 +3,11 @@ using System.Collections;
 
 public class _Missile : _Weapon {
 
-	public new int damage = 25;
 	// Use this for initialization
 	void Start () {
-	
+        damage = 25;
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
 	void OnCollisionEnter2D(Collision2D coll)
 	{
