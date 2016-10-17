@@ -8,7 +8,7 @@ public class _Animate : _PlayerAnimation {
     readonly string ATTACK  = "__ATTACK__";
     readonly string IDLE    = "__IDLE__";
 
-    void Animator(string type)
+    public void Animator(string type)
     {
         if (type == DAMAGE)
         {

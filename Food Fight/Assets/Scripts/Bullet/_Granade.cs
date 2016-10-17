@@ -26,7 +26,7 @@ public class _Granade : _Weapon {
 //			goToNext ();
 	}
 
-	void OnCollisionEnter2D(Collision2D coll){
+	new void OnCollisionEnter2D(Collision2D coll){
 		timFlag = true;
 
 	}

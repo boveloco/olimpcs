@@ -11,7 +11,7 @@ public class _PlayerAnimation : MonoBehaviour
     //spawna as bullets
     public Transform spawner;
 
-    public int weapon;
+    private int weapon;
 
     public AudioClip audioDeath;
     public AudioSource audioS;
@@ -21,9 +21,23 @@ public class _PlayerAnimation : MonoBehaviour
     private Animator anim;
     private Rigidbody2D rb;
 
-	// Use this for initialization
-	void Start()
+    public int Weapon
     {
+        get
+        {
+            return weapon;
+        }
+
+        set
+        {
+            weapon = value;
+        }
+    }
+
+    // Use this for initialization
+    void Start()
+    {
+        weapon = 0;
         if(this.tag == "Player2")
             transform.eulerAngles = new Vector2(0, 180);
 
@@ -75,14 +89,14 @@ public class _PlayerAnimation : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.Q))
         {
-            anim.SetInteger("weapon1", weapon);
+            anim.SetInteger("weapon1", Weapon);
 
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 anim.SetBool("toAttack1", true);
             }
         }
-        else if(Input.GetKeyUp(KeyCode.Q) && anim.GetInteger("weapon1") > -1)
+        else if (Input.GetKeyUp(KeyCode.Q) && anim.GetInteger("weapon1") > -1)
         {
             anim.SetInteger("weapon1", -1);
             anim.SetBool("toKeepWeapon1", true);
@@ -99,17 +113,23 @@ public class _PlayerAnimation : MonoBehaviour
 
     private void ToKeepWeapon()
     {
-        anim.SetBool("toKeepWeapon1", false);
-        anim.SetInteger("weapon1", -1);
+        if (anim)
+        {
+            anim.SetBool("toKeepWeapon1", false);
+            anim.SetInteger("weapon1", -1);
+        }
     }
 
     private void FinishAttack()
     {
-        anim.SetBool("toAttack1", false);
-        anim.SetBool("finishPunch1", true);
-        anim.SetBool("toKeepWeapon1", false);
-        anim.SetBool("finishFing1", true);
-        anim.SetInteger("weapon1", -1);
+        if (anim)
+        {
+            anim.SetBool("toAttack1", false);
+            anim.SetBool("finishPunch1", true);
+            anim.SetBool("toKeepWeapon1", false);
+            anim.SetBool("finishFing1", true);
+            anim.SetInteger("weapon1", -1);
+        }
     }
 
     public void FinishAnimation()
@@ -135,14 +155,18 @@ public class _PlayerAnimation : MonoBehaviour
     }
 
     public void Damage()
-    {
-        anim.SetBool("damage1", true);
+    {   
+        if(anim)
+            anim.SetBool("damage1", true);
     }
 
     private void FinishDamege()
     {
-        anim.SetBool("damage1", false);
-        anim.SetBool("finishDanage1", true);
+        if (anim)
+        {
+            anim.SetBool("damage1", false);
+            anim.SetBool("finishDanage1", true);
+        }
     }
 
     private void SetDestroy()
@@ -154,7 +178,7 @@ public class _PlayerAnimation : MonoBehaviour
     {
         if (!GameObject.Find("TurnManager").GetComponent<_TurnController>().fire)
         {
-            GameObject.Find("Weapons").GetComponent<_ControlWeapons>().controlWeapons(GetComponent<_Animate>().weapon, spawner);
+            GameObject.Find("Weapons").GetComponent<_ControlWeapons>().controlWeapons(GetComponent<_Animate>().Weapon, spawner);
             GameObject.Find("TurnManager").GetComponent<_TurnController>().fire = true;
         }
     }

@@ -2,10 +2,10 @@
 using System.Collections;
 
 public class _WeaponMenu : MonoBehaviour {
-
-    public int weapon = 0;
+    [HideInInspector]
     private static int MAX_WEAPON_SIZE = 4;
     private GameObject _target;
+    private _PlayerAnimation _pAnim;
 
     public void setWeapon(int weapon)
     {
@@ -13,7 +13,8 @@ public class _WeaponMenu : MonoBehaviour {
             return;
 
         _target = GameObject.Find("TurnManager").GetComponent<_TurnController>().getPlayerOnTurn();
-        _target.GetComponent<_Animate>().weapon = weapon;
+        _pAnim = _target.GetComponent<_PlayerAnimation>();
+        _pAnim.Weapon = weapon;
     }
 
 }

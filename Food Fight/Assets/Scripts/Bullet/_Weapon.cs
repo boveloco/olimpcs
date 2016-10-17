@@ -1,35 +1,59 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class _Weapon : _Object {
-    public int damage = 10;
+public class _Weapon : MonoBehaviour {
+    protected int damage = 0;
     public GameObject obj;
     public AudioClip audioExplosion;
     public AudioSource audioS;
 
-    void OnCollisionEnter2D(Collision2D coll)
+    void Start()
     {
+        damage = 10;
+    }
+
+    virtual protected void OnCollisionEnter2D(Collision2D coll)
+    {
+        //cria explosao
+        Instantiate(obj, transform.position, Quaternion.identity);
+
+        //toca audio
+        if (audioS)
+            audioS.PlayOneShot(audioExplosion, 1.0f);
+
         if (coll.gameObject.tag == "Player" || coll.gameObject.tag == "Player2")
         {
-            coll.gameObject.SendMessage("ApplyDamage", damage);
-            Instantiate(obj, transform.position, Quaternion.identity);
-            if (audioS)
-                audioS.PlayOneShot(audioExplosion, 1.0f);
-        }
-        else if (coll.gameObject.tag == "Ground")
-        {
-            Instantiate(obj, transform.position, Quaternion.identity);
-            if (audioS)
-                audioS.PlayOneShot(audioExplosion, 1.0f);
+            //animacao dano
+            coll.gameObject.GetComponent<_Object>().ApplyDamage(damage);
         }
 
+        //		goToNext ();
         Destroy(gameObject);
-
     }
+   
 
     protected void OnDestroy()
     {
         GameObject.Find("TurnManager").GetComponent<_TurnController>().flagTim = true;
+    }
+
+    protected void verifyPosition()
+    {
+        if (transform.position.y < -4.0f)
+        {
+            GameObject.Find("TurnManager").GetComponent<_TurnController>().flagTim = true;
+            Destroy(this);
+        }
+        if (transform.position.x < -140f || transform.position.x > -104f)
+        {
+            GameObject.Find("TurnManager").GetComponent<_TurnController>().flagTim = true;
+            Destroy(this);
+        }
+    }
+
+    protected void Update()
+    {
+        verifyPosition();
     }
 
 }

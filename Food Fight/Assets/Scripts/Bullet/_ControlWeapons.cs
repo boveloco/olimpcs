@@ -91,11 +91,12 @@ public class _ControlWeapons : MonoBehaviour {
 
     private void instantiateWeapon(int type, Transform t)
     {
-            bulletInstance = (GameObject)Instantiate(types[type], t.position + t.right, t.rotation);
-            
-            if(bulletInstance)
-                GameObject.Find("TurnManager").GetComponent<_TurnController>().camera.target = bulletInstance.transform;
+        bulletInstance = (GameObject)Instantiate(types[type], t.position + t.right, t.rotation);
+
+        if (bulletInstance)
+            GameObject.Find("TurnManager").GetComponent<_TurnController>().camera.target = bulletInstance.transform;
     }
+
 	private void addVelocity(Transform t){
 		bulletInstance.GetComponent<Rigidbody2D>().velocity = (speed * t.right);
 	}

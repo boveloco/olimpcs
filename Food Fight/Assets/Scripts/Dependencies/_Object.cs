@@ -19,21 +19,15 @@ public class _Object : MonoBehaviour {
     {
         lives -= dmg;
         if (lives <= 0)
-            SendMessage("Del");
+            gameObject.GetComponent<_Animate>().Animator(DEATH);
 
-        SendMessage("Animator", DAMAGE);
-    }
-
-    void Del()
-    {
-        SendMessage("Animator", DEATH);
+        gameObject.GetComponent<_Animate>().Animator(DAMAGE);
     }
 
     private void verifyPosition()
     {
         if (transform.position.y < -4.0f )
         {
-            Del();
             GameObject.Find("TurnManager").GetComponent<_TurnController>().flagTim = true;
             Destroy(this);
         }

@@ -8,6 +8,4 @@ public class _Explosion : MonoBehaviour {
     {
         Destroy(obj.gameObject);
     }
-
-    
 }

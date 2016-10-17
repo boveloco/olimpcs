@@ -159,8 +159,7 @@ public class _TurnController : MonoBehaviour {
 
     public void changeTurn()
     {
-        Debug.Log(tim);
-        if (team)
+       if (team)
         {
             timeLeft = 30;
             toogleObjectTransform(objects[turn], true);
