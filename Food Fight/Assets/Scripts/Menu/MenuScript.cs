@@ -7,8 +7,11 @@ public class MenuScript : MonoBehaviour {
     public GameObject menuPause;
     public GameObject menuWeapons;
 
-	// Use this for initialization
-	void Start () {
+    public GameObject Orange;
+    public GameObject Green;
+
+    // Use this for initialization
+    void Start () {
 
     }
 	

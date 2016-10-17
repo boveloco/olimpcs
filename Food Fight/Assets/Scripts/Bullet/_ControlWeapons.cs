@@ -28,9 +28,9 @@ public class _ControlWeapons : MonoBehaviour {
         bulletInstance = new GameObject();
         types = new GameObject[5];
         types[0] = missile;
-        types[1] = granade;
+        types[1] = ak;
         types[2] = dinamite;
-        types[3] = ak;
+        types[3] = granade;
     }
 
     void Update()
@@ -65,14 +65,15 @@ public class _ControlWeapons : MonoBehaviour {
                 addForce(T.right, 250);
                 break;
             case 1:
-                instantiateWeapon(type, T);
-                addForce((T.right + T.up), 250);
+                instantiateManyWeapon(type, T);
+
                 break;
             case 2:
                 instantiateWeapon(type, T);
                 break;
             case 3:
-                instantiateManyWeapon(type, T);
+                instantiateWeapon(type, T);
+                addForce((T.right + T.up), 250);
                 break;
             default:
                 return;

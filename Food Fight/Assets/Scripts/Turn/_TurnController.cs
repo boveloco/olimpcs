@@ -20,7 +20,8 @@ public class _TurnController : MonoBehaviour {
     public bool fire = false;
 
     //false = green
-    private bool team = false;
+    [HideInInspector]
+    public bool team = false;
 
     private int turn = 0;
     private int turn2 = 0;
@@ -187,21 +188,25 @@ public class _TurnController : MonoBehaviour {
     {
         if (team)
         {
-            Green.SetActive(true);
-            Orange.SetActive(false);
+            Application.LoadLevel("gameOverGreen_scene");
         }
         else
         {
-            Green.SetActive(false);
-            Orange.SetActive(true);
+            Application.LoadLevel("gameOverOrange_scene");
         }
+
+
     }
 
-    public void verifyEnd() {
-        if (objects.Count == 0) {
+    public void verifyEnd()
+    {
+        if (objects.Count == 0)
+        {
             team = true;
             endGame();
-        } else if (objects2.Count == 0) {
+        }
+        else if (objects2.Count == 0)
+        {
             team = false;
             endGame();
         }

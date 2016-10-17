@@ -63,7 +63,7 @@ public class _PlayerAnimation : MonoBehaviour
             GameObject.Find("Weapons").GetComponent<_ControlWeapons>().side = false;
         }
 
-        if (isGround && Input.GetKeyDown(KeyCode.W))
+        if (isGround && Input.GetKeyDown(KeyCode.W) || isGround && Input.GetKeyDown(KeyCode.UpArrow))
         {
             rb.AddForce(Vector2.up * forcesJump);
         }
@@ -77,7 +77,7 @@ public class _PlayerAnimation : MonoBehaviour
         {
             anim.SetInteger("weapon1", weapon);
 
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 anim.SetBool("toAttack1", true);
             }
