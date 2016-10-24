@@ -16,7 +16,7 @@ public class _PlayerAnimation : MonoBehaviour
     public AudioClip audioDeath;
     public AudioSource audioS;
 
-    private bool isGround;
+    public bool isGround;
 
     private Animator anim;
     private Rigidbody2D rb;

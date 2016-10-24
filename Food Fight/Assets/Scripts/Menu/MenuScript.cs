@@ -6,10 +6,7 @@ public class MenuScript : MonoBehaviour {
 
     public GameObject menuPause;
     public GameObject menuWeapons;
-
-    public GameObject Orange;
-    public GameObject Green;
-
+   
     // Use this for initialization
     void Start () {
 
@@ -36,7 +33,7 @@ public class MenuScript : MonoBehaviour {
     public void clickSand()
     {
         Time.timeScale = 1;
-        // Application.LoadLevel("sand_scene");
+        Application.LoadLevel("sand_scene");
     }
 
     public void clickMenu()
