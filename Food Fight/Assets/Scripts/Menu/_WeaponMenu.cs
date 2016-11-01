@@ -15,6 +15,7 @@ public class _WeaponMenu : MonoBehaviour {
         _target = GameObject.Find("TurnManager").GetComponent<_TurnController>().getPlayerOnTurn();
         _pAnim = _target.GetComponent<_PlayerAnimation>();
         _pAnim.Weapon = weapon;
+        _pAnim.FinishAnimation();
     }
 
 }

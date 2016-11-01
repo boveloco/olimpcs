@@ -16,7 +16,7 @@ public class _PlayerAnimation : MonoBehaviour
     public AudioClip audioDeath;
     public AudioSource audioS;
 
-    public bool isGround;
+    private bool isGround;
 
     private Animator anim;
     private Rigidbody2D rb;
@@ -37,20 +37,25 @@ public class _PlayerAnimation : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        weapon = 0;
+        weapon = -1;
         if(this.tag == "Player2")
             transform.eulerAngles = new Vector2(0, 180);
 
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
+        FinishAnimation();
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && weapon > -1)
         {
-            shoot();
+            if (weapon > 1)
+                ToAttack();
+            else
+                shoot();
         }
         Moviment();
         ToCatchWeapon();
@@ -68,6 +73,8 @@ public class _PlayerAnimation : MonoBehaviour
             transform.Translate(Vector2.right * speed * Time.deltaTime);
             anim.SetFloat("move1", Mathf.Abs(x));
             GameObject.Find("Weapons").GetComponent<_ControlWeapons>().side = true;
+            //anim.SetInteger("weapon1", -1);
+            //anim.SetBool("toKeepWeapon1", true);
         }
         else if (x < 0.0f)
         {
@@ -75,8 +82,13 @@ public class _PlayerAnimation : MonoBehaviour
             transform.Translate(Vector2.right * speed * Time.deltaTime);
             anim.SetFloat("move1", Mathf.Abs(x));
             GameObject.Find("Weapons").GetComponent<_ControlWeapons>().side = false;
+            //anim.SetInteger("weapon1", -1);
+            //anim.SetBool("toKeepWeapon1", true);
         }
-
+        //else
+        //{
+        //    ToCatchWeapon();
+        //}
         if (isGround && Input.GetKeyDown(KeyCode.W) || isGround && Input.GetKeyDown(KeyCode.UpArrow))
         {
             rb.AddForce(Vector2.up * forcesJump);
@@ -87,20 +99,22 @@ public class _PlayerAnimation : MonoBehaviour
 
     private void ToCatchWeapon()
     {
-        if(Input.GetKey(KeyCode.Q))
-        {
-            anim.SetInteger("weapon1", Weapon);
+        //if(Input.GetKey(KeyCode.Q))
+        //{
+        //    anim.SetInteger("weapon1", Weapon);
 
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                anim.SetBool("toAttack1", true);
-            }
-        }
-        else if (Input.GetKeyUp(KeyCode.Q) && anim.GetInteger("weapon1") > -1)
-        {
-            anim.SetInteger("weapon1", -1);
-            anim.SetBool("toKeepWeapon1", true);
-        }
+        //    if (Input.GetKeyDown(KeyCode.E))
+        //    {
+        //        anim.SetBool("toAttack1", true);
+        //    }
+        //}
+        //else if (Input.GetKeyUp(KeyCode.Q) && anim.GetInteger("weapon1") > -1)
+        //{
+        //    anim.SetInteger("weapon1", -1);
+        //    anim.SetBool("toKeepWeapon1", true);
+        //}
+
+        anim.SetInteger("weapon1", Weapon);
     }
 
     public void ToAttack()
@@ -180,6 +194,8 @@ public class _PlayerAnimation : MonoBehaviour
         {
             GameObject.Find("Weapons").GetComponent<_ControlWeapons>().controlWeapons(GetComponent<_Animate>().Weapon, spawner);
             GameObject.Find("TurnManager").GetComponent<_TurnController>().fire = true;
+            //FinishAnimation();
+            weapon = -1;
         }
     }
 }

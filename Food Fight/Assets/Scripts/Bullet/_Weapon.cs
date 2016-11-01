@@ -4,8 +4,6 @@ using System.Collections;
 public class _Weapon : MonoBehaviour {
     protected int damage = 0;
     public GameObject obj;
-    public AudioClip audioExplosion;
-    public AudioSource audioS;
 
     void Start()
     {
@@ -17,9 +15,6 @@ public class _Weapon : MonoBehaviour {
         //cria explosao
         Instantiate(obj, transform.position, Quaternion.identity);
 
-        //toca audio
-        if (audioS)
-            audioS.PlayOneShot(audioExplosion, 1.0f);
 
         if (coll.gameObject.tag == "Player" || coll.gameObject.tag == "Player2")
         {
