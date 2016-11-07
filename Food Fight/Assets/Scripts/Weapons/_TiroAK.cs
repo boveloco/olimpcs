@@ -8,4 +8,10 @@ public class _TiroAK : _Weapon {
     {
         damage = 10;
     }
+
+	void OnDestroy(){
+		// MANTENHA ESSA FUNÇÃO AQUI
+		// ELA NULIFICA O ON DESTROY DO PAI!!
+		//caralho quinta vez q essa merda some..kkkk
+	}
 }
