@@ -1,4 +1,4 @@
 sceneSetups:
-- path: C:/Users/Rodigo/Desktop/olimpcs-master/Food Fight/Assets/Scenes/noite_scene.unity
+- path: Assets/Scenes/menu_scene.unity
   isLoaded: 1
   isActive: 1
