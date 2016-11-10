@@ -7,11 +7,15 @@ public class _PlayerAnimation : MonoBehaviour
     public float speed = 1.0f;
     public float forcesJump;
     public Transform ground;
-
+    
     //spawna as bullets
     public Transform spawner;
 
     private int weapon;
+    
+    private MenuScript menu;
+    private _TurnController turn;
+    private _WeaponMenu weapons;
 
     public AudioClip audioDeath;
     public AudioSource audioS;
@@ -37,6 +41,9 @@ public class _PlayerAnimation : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        menu = GameObject.Find("Menu Manager").GetComponent<MenuScript>();
+        turn = GameObject.Find("TurnManager").GetComponent<_TurnController>();
+        weapons = GameObject.Find("Weapons").GetComponent<_WeaponMenu>();
         weapon = -1;
         if(this.tag == "Player2")
             transform.eulerAngles = new Vector2(0, 180);
@@ -50,49 +57,187 @@ public class _PlayerAnimation : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && weapon > -1)
-        {
-            if (weapon > 1)
-                ToAttack();
-            else
-                shoot();
-        }
+        atirar();
+        
         Moviment();
         ToCatchWeapon();
         //SetDeath();
     }
 
+    public void atirar()
+    {
+        if (gameObject.tag == "Player" && !menu.menuAtivo)
+        {
+            if (Input.GetButtonDown("P1_[]") && weapon > -1)
+            {
+                if (weapon > 1)
+                    ToAttack();
+                else
+                    shoot();
+            }
+        }
+
+        if (gameObject.tag == "Player2" && !menu.menuAtivo)
+        {
+            if (Input.GetButtonDown("P2_[]") && weapon > -1)
+            {
+                if (weapon > 1)
+                    ToAttack();
+                else
+                    shoot();
+            }
+        }
+    }
+
+
     private void Moviment()
     {
         isGround = Physics2D.Linecast(transform.position, ground.position, 1 << LayerMask.NameToLayer("Ground"));
-        float x = Input.GetAxis("Horizontal");
+        
+        if (gameObject.tag == "Player")
+        {
+            if (Input.GetButtonDown("SELECT1"))
+            {
+                GameObject.Find("Menu Manager").GetComponent<MenuScript>().clickWeapons();
+            }
 
-        if (x > 0.0f)
-        {
-            transform.eulerAngles = new Vector2(0, 0);
-            transform.Translate(Vector2.right * speed * Time.deltaTime);
-            anim.SetFloat("move1", Mathf.Abs(x));
-            GameObject.Find("Weapons").GetComponent<_ControlWeapons>().side = true;
-            //anim.SetInteger("weapon1", -1);
-            //anim.SetBool("toKeepWeapon1", true);
+            if (Input.GetButtonDown("P1_L1"))
+            {
+                turn.flagTim = true;
+            }
+
+            if (Input.GetButtonDown("P1_R1"))
+            {
+                turn.flagTim = true;
+            }
+
+            if (!menu.menuAtivo)
+            {
+                float x = Input.GetAxis("P1_Horizontal");
+
+                if (x > 0.9f)
+                {
+                    transform.eulerAngles = new Vector2(0, 0);
+                    transform.Translate(Vector2.right * speed * Time.deltaTime);
+                    anim.SetBool("move", true);
+                    GameObject.Find("Weapons").GetComponent<_ControlWeapons>().side = true;
+                    //anim.SetInteger("weapon1", -1);
+                    //anim.SetBool("toKeepWeapon1", true);
+                }
+                else if (x < -0.9f)
+                {
+                    transform.eulerAngles = new Vector2(0, 180);
+                    transform.Translate(Vector2.right * speed * Time.deltaTime);
+                    anim.SetBool("move", true);
+                    GameObject.Find("Weapons").GetComponent<_ControlWeapons>().side = false;
+                    //anim.SetInteger("weapon1", -1);
+                    //anim.SetBool("toKeepWeapon1", true);
+                }
+                else
+                    anim.SetBool("move", false);
+
+                if (isGround && (Input.GetButtonDown("P1_X")))
+                {
+                    rb.AddForce(Vector2.up * forcesJump);
+                }
+            }
+            else
+            {
+                if (Input.GetButtonDown("P1_X"))
+                {
+                    weapons.setWeapon(0);
+                }
+                if (Input.GetButtonDown("P1_[]"))
+                {
+                    weapons.setWeapon(1);
+                }
+                if (Input.GetButtonDown("P1_/\\"))
+                {
+                    weapons.setWeapon(2);
+                }
+                if (Input.GetButtonDown("P1_O"))
+                {
+                    weapons.setWeapon(3);
+                }
+            }
         }
-        else if (x < 0.0f)
+
+       
+
+        if (gameObject.tag == "Player2")
         {
-            transform.eulerAngles = new Vector2(0, 180);
-            transform.Translate(Vector2.right * speed * Time.deltaTime);
-            anim.SetFloat("move1", Mathf.Abs(x));
-            GameObject.Find("Weapons").GetComponent<_ControlWeapons>().side = false;
-            //anim.SetInteger("weapon1", -1);
-            //anim.SetBool("toKeepWeapon1", true);
+            if (Input.GetButtonDown("SELECT2"))
+            {
+                GameObject.Find("Menu Manager").GetComponent<MenuScript>().clickWeapons();
+            }
+
+            if (Input.GetButtonDown("P2_L1"))
+            {
+                turn.flagTim = true;
+            }
+
+            if (Input.GetButtonDown("P2_R1"))
+            {
+                turn.flagTim = true;
+            }
+
+            if (!menu.menuAtivo)
+            {
+                float x = Input.GetAxis("P2_Horizontal");
+
+                if (x > 0.9f)
+                {
+                    transform.eulerAngles = new Vector2(0, 0);
+                    transform.Translate(Vector2.right * speed * Time.deltaTime);
+                    anim.SetBool("move", true);
+                    GameObject.Find("Weapons").GetComponent<_ControlWeapons>().side = true;
+                    //anim.SetInteger("weapon1", -1);
+                    //anim.SetBool("toKeepWeapon1", true);
+                }
+                else if (x < -0.9f)
+                {
+                    transform.eulerAngles = new Vector2(0, 180);
+                    transform.Translate(Vector2.right * speed * Time.deltaTime);
+                    //anim.SetFloat("move1", Mathf.Abs(x));
+                    anim.SetBool("move", true);
+                    GameObject.Find("Weapons").GetComponent<_ControlWeapons>().side = false;
+                    //anim.SetInteger("weapon1", -1);
+                    //anim.SetBool("toKeepWeapon1", true);
+                }
+                else
+                    anim.SetBool("move", false);
+
+                if (isGround && (Input.GetButtonDown("P2_X")))
+                {
+                    rb.AddForce(Vector2.up * forcesJump);
+                }
+            }
+            else
+            {
+                if (Input.GetButtonDown("P2_X"))
+                {
+                    weapons.setWeapon(0);
+                }
+                if (Input.GetButtonDown("P2_[]"))
+                {
+                    weapons.setWeapon(1);
+                }
+                if (Input.GetButtonDown("P2_/\\"))
+                {
+                    weapons.setWeapon(2);
+                }
+                if (Input.GetButtonDown("P2_O"))
+                {
+                    weapons.setWeapon(3);
+                }
+            }
         }
+
         //else
         //{
         //    ToCatchWeapon();
         //}
-        if (isGround && Input.GetKeyDown(KeyCode.W) || isGround && Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            rb.AddForce(Vector2.up * forcesJump);
-        }
+        
 
         anim.SetBool("jump1", !isGround);
     }
@@ -157,7 +302,7 @@ public class _PlayerAnimation : MonoBehaviour
             anim.SetBool("toKeepWeapon1", true);
             anim.SetBool("finishFing1", false);
             anim.SetInteger("weapon1", -1);
-            anim.SetFloat("move1", 0.0f);
+            anim.SetBool("move", false);
             anim.SetBool("jump1", false);
         }
     }

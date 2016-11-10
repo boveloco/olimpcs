@@ -70,11 +70,11 @@ public class _TurnController : MonoBehaviour {
         if (getTim(0.7f))
             changeTurn();
 
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if(Input.GetKeyDown(KeyCode.Tab))
         {
             flagTim = true;
-
         }
+
     }
 
     private void toogleObjectTransform(GameObject objecto, bool activate)
