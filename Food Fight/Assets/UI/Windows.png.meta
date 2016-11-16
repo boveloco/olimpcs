@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 7c68fe3c4edceae4a8393f4486e9a645
-timeCreated: 1475616449
+timeCreated: 1479332426
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -51,10 +51,10 @@ TextureImporter:
     21300088: Windows_44
     21300090: Windows_45
     21300092: Windows_46
-    21300094: Windows_47
+    21300094: Health_bar_Back
     21300096: Windows_48
     21300098: Windows_49
-    21300100: Windows_50
+    21300100: Health_Bar_White
     21300102: Windows_51
     21300104: Windows_52
     21300106: Windows_53
@@ -699,7 +699,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Windows_47
+      name: Health_bar_Back
       rect:
         serializedVersion: 2
         x: 3034
@@ -738,7 +738,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Windows_50
+      name: Health_Bar_White
       rect:
         serializedVersion: 2
         x: 4529

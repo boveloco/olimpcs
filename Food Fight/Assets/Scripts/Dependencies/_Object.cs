@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class _Object : MonoBehaviour {
 
@@ -7,6 +8,8 @@ public class _Object : MonoBehaviour {
     public readonly string DEATH    = "__DEATH__";
     public readonly string AK       = "__ATTACK__";
     public readonly string IDLE     = "__IDLE__";
+
+    public Image health;
 
     public int lives;
 
@@ -40,6 +43,8 @@ public class _Object : MonoBehaviour {
 
     void Update()
     {
+        health.fillAmount = (float)lives / 100;
+
         verifyPosition();
     }
 }
