@@ -66,7 +66,7 @@ public class _PlayerAnimation : MonoBehaviour
 
     public void atirar()
     {
-        if (gameObject.tag == "Player" && !menu.menuAtivo)
+        if (gameObject.tag == "Player" && menu.menuAtivo)
         {
             if (Input.GetButtonDown("P1_[]") && weapon > -1)
             {
@@ -77,7 +77,7 @@ public class _PlayerAnimation : MonoBehaviour
             }
         }
 
-        if (gameObject.tag == "Player2" && !menu.menuAtivo)
+        if (gameObject.tag == "Player2" && menu.menuAtivo)
         {
             if (Input.GetButtonDown("P2_[]") && weapon > -1)
             {
@@ -111,11 +111,12 @@ public class _PlayerAnimation : MonoBehaviour
             //    turn.flagTim = true;
             //}
 
-            if (!menu.menuAtivo)
+            if (menu.menuAtivo)
             {
                 float x = Input.GetAxis("P1_Horizontal");
+                float xT = Input.GetAxis("Horizontal");
 
-                if (x > 0.9f)
+                if (x > 0.9f || xT > 0.0)
                 {
                     transform.eulerAngles = new Vector2(0, 0);
                     transform.Translate(Vector2.right * speed * Time.deltaTime);
@@ -124,7 +125,7 @@ public class _PlayerAnimation : MonoBehaviour
                     //anim.SetInteger("weapon1", -1);
                     //anim.SetBool("toKeepWeapon1", true);
                 }
-                else if (x < -0.9f)
+                else if (x < -0.9f || xT < 0.0)
                 {
                     transform.eulerAngles = new Vector2(0, 180);
                     transform.Translate(Vector2.right * speed * Time.deltaTime);
@@ -181,11 +182,12 @@ public class _PlayerAnimation : MonoBehaviour
             //    turn.flagTim = true;
             //}
 
-            if (!menu.menuAtivo)
+            if (menu.menuAtivo)
             {
                 float x = Input.GetAxis("P2_Horizontal");
+                float xT = Input.GetAxis("Horizontal");
 
-                if (x > 0.9f)
+                if (x > 0.9f || xT > 0.0)
                 {
                     transform.eulerAngles = new Vector2(0, 0);
                     transform.Translate(Vector2.right * speed * Time.deltaTime);
@@ -194,7 +196,7 @@ public class _PlayerAnimation : MonoBehaviour
                     //anim.SetInteger("weapon1", -1);
                     //anim.SetBool("toKeepWeapon1", true);
                 }
-                else if (x < -0.9f)
+                else if (x < -0.9f || xT < 0.0)
                 {
                     transform.eulerAngles = new Vector2(0, 180);
                     transform.Translate(Vector2.right * speed * Time.deltaTime);

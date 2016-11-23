@@ -18,7 +18,7 @@ public class MenuScript : MonoBehaviour {
     // Use this for initialization
     void Start () {
         menuAtivo = false;
-        start = false;
+        start = true;
     }
 	
 	// Update is called once per frame
