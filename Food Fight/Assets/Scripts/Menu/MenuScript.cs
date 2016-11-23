@@ -8,7 +8,7 @@ public class MenuScript : MonoBehaviour {
     public GameObject menuPause;
     public GameObject menuWeapons;
     public GameObject tutorial;
-
+    
     public Button bazuka;
     public Button resume;
     [HideInInspector]
@@ -26,16 +26,6 @@ public class MenuScript : MonoBehaviour {
         if (SceneManager.GetActiveScene().name == "menu_scene")
         {
             if (Input.GetButtonDown("START"))
-            {
-                clickTutorial();
-            }
-
-            //if(Input.GetButtonDown("P1_X") || Input.GetButtonDown("P2_X"))
-            //{
-            //    playTutorial();
-            //}
-
-            if (Input.GetButtonDown("P1_O") || Input.GetButtonDown("P2_O"))
             {
                 clickPlay();
             }
@@ -142,15 +132,5 @@ public class MenuScript : MonoBehaviour {
         start = !start;
         wait();
         menuAtivo = !menuAtivo;
-    }
-
-    public void clickTutorial()
-    {
-        tutorial.SetActive(true);
-    }
-
-    public void playTutorial()
-    {
-        Application.LoadLevel("tutorial_scene");
     }
 }

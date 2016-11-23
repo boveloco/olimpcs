@@ -11,6 +11,8 @@ public class _Object : MonoBehaviour {
 
     public Image health;
 
+    public GameObject focus;
+
     public int lives;
 
     // Use this for initialization
@@ -43,6 +45,12 @@ public class _Object : MonoBehaviour {
 
     void Update()
     {
+        if (gameObject.GetComponent<_PlayerAnimation>().enabled)
+            focus.SetActive(true);
+        else
+            focus.SetActive(false);
+
+
         health.fillAmount = (float)lives / 100;
 
         verifyPosition();

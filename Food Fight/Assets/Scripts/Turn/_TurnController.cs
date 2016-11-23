@@ -26,13 +26,15 @@ public class _TurnController : MonoBehaviour {
     private int turn = 0;
     private int turn2 = 0;
 
-    private float timeLeft = 30;
+    private float timeLeft = 31;
 
     // timer
     private float tim = 0.0f;
     public bool flagTim = false;
     // Use this for initialization
     void Start() {
+
+
         objects = new List<GameObject>();
         objects2 = new List<GameObject>();
 
@@ -148,7 +150,7 @@ public class _TurnController : MonoBehaviour {
         if (timeLeft < 0)
         {
             flagTim = true;
-            timeLeft = 30;
+            timeLeft = 31;
             //changeTurn();
         }
         else
@@ -161,14 +163,14 @@ public class _TurnController : MonoBehaviour {
     {
        if (team)
         {
-            timeLeft = 30;
+            timeLeft = 31;
             toogleObjectTransform(objects[turn], true);
             controlObjects();
             team = !team;
         }
         else
         {
-            timeLeft = 30;
+            timeLeft = 31;
             toogleObjectTransform(objects2[turn2], true);
             controlObjects();
             team = !team;

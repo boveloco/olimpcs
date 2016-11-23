@@ -10,7 +10,7 @@ public class _PlayerAnimation : MonoBehaviour
     
     //spawna as bullets
     public Transform spawner;
-
+        
     private int weapon;
     
     private MenuScript menu;
@@ -50,7 +50,7 @@ public class _PlayerAnimation : MonoBehaviour
 
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-
+        
         FinishAnimation();
 	}
 	
@@ -101,15 +101,15 @@ public class _PlayerAnimation : MonoBehaviour
                 GameObject.Find("Menu Manager").GetComponent<MenuScript>().clickWeapons();
             }
 
-            if (Input.GetButtonDown("P1_L1"))
-            {
-                turn.flagTim = true;
-            }
+            //if (Input.GetButtonDown("P1_L1"))
+            //{
+            //    turn.flagTim = true;
+            //}
 
-            if (Input.GetButtonDown("P1_R1"))
-            {
-                turn.flagTim = true;
-            }
+            //if (Input.GetButtonDown("P1_R1"))
+            //{
+            //    turn.flagTim = true;
+            //}
 
             if (!menu.menuAtivo)
             {
@@ -171,15 +171,15 @@ public class _PlayerAnimation : MonoBehaviour
                 GameObject.Find("Menu Manager").GetComponent<MenuScript>().clickWeapons();
             }
 
-            if (Input.GetButtonDown("P2_L1"))
-            {
-                turn.flagTim = true;
-            }
+            //if (Input.GetButtonDown("P2_L1"))
+            //{
+            //    turn.flagTim = true;
+            //}
 
-            if (Input.GetButtonDown("P2_R1"))
-            {
-                turn.flagTim = true;
-            }
+            //if (Input.GetButtonDown("P2_R1"))
+            //{
+            //    turn.flagTim = true;
+            //}
 
             if (!menu.menuAtivo)
             {
@@ -244,21 +244,6 @@ public class _PlayerAnimation : MonoBehaviour
 
     private void ToCatchWeapon()
     {
-        //if(Input.GetKey(KeyCode.Q))
-        //{
-        //    anim.SetInteger("weapon1", Weapon);
-
-        //    if (Input.GetKeyDown(KeyCode.E))
-        //    {
-        //        anim.SetBool("toAttack1", true);
-        //    }
-        //}
-        //else if (Input.GetKeyUp(KeyCode.Q) && anim.GetInteger("weapon1") > -1)
-        //{
-        //    anim.SetInteger("weapon1", -1);
-        //    anim.SetBool("toKeepWeapon1", true);
-        //}
-
         anim.SetInteger("weapon1", Weapon);
     }
 

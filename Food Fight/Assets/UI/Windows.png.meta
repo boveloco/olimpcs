@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 7c68fe3c4edceae4a8393f4486e9a645
-timeCreated: 1479332426
+timeCreated: 1479897864
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -65,6 +65,7 @@ TextureImporter:
     21300116: Windows_55
     21300118: Windows_56
     21300120: Windows_14
+    21300122: Focus
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -836,6 +837,19 @@ TextureImporter:
         y: 2000
         width: 13
         height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Focus
+      rect:
+        serializedVersion: 2
+        x: 4244
+        y: 1988
+        width: 189
+        height: 194
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
