@@ -14,10 +14,11 @@ public class _Object : MonoBehaviour {
     public GameObject focus;
 
     public int lives;
-
+	private int map;
     // Use this for initialization
     void Start()
     {
+		map = GameObject.Find ("TurnManager").GetComponent<_TurnController> ().map;
     }
 
     public void ApplyDamage(int dmg)
@@ -31,16 +32,12 @@ public class _Object : MonoBehaviour {
 
     private void verifyPosition()
     {
-        if (transform.position.y < -4.0f )
-        {
-            GameObject.Find("TurnManager").GetComponent<_TurnController>().flagTim = true;
-            Destroy(this);
-        }
-        if(transform.position.x < -140f || transform.position.x > -104f)
-        {
-            GameObject.Find("TurnManager").GetComponent<_TurnController>().flagTim = true;
-            Destroy(this);
-        }
+		if (map == 1) {
+			if (transform.position.y < -4.0f || transform.position.x < -140f || transform.position.x > -104f ) {
+				this.gameObject.SetActive (false);
+				GameObject.Find ("TurnManager").GetComponent<_TurnController> ().flagTim = true;
+			}
+		}
     }
 
     void Update()

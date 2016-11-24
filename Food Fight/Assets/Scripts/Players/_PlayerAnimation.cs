@@ -274,7 +274,7 @@ public class _PlayerAnimation : MonoBehaviour
             anim.SetBool("finishPunch1", true);
             anim.SetBool("toKeepWeapon1", false);
             anim.SetBool("finishFing1", true);
-            anim.SetInteger("weapon1", -1);
+            //anim.SetInteger("weapon1", -1);
         }
     }
 
@@ -288,7 +288,7 @@ public class _PlayerAnimation : MonoBehaviour
             anim.SetBool("finishPunch1", false);
             anim.SetBool("toKeepWeapon1", true);
             anim.SetBool("finishFing1", false);
-            anim.SetInteger("weapon1", -1);
+            //anim.SetInteger("weapon1", -1);
             anim.SetBool("move", false);
             anim.SetBool("jump1", false);
         }

@@ -49,7 +49,7 @@ public class _ControlWeapons : MonoBehaviour {
 
                 bulletInstance = (GameObject)Instantiate(types[_type], _t.position + _t.right, _t.rotation);
                 missiles.Add(bulletInstance);
-                addForce(_t.right, 200);
+                addForce(_t.right, 350);
                 bulletInstance = null;
                 count++;
                 timer = 0;

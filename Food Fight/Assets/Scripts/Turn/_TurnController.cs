@@ -16,6 +16,7 @@ public class _TurnController : MonoBehaviour {
     public GameObject Orange;
     public GameObject Green;
 
+	public int map = 1;
 
     public bool fire = false;
 
