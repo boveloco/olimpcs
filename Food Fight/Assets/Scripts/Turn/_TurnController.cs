@@ -36,7 +36,6 @@ public class _TurnController : MonoBehaviour {
     // Use this for initialization
     void Start() {
 
-
         objects = new List<GameObject>();
         objects2 = new List<GameObject>();
 
@@ -59,8 +58,8 @@ public class _TurnController : MonoBehaviour {
         {
             p.GetComponent<_PlayerAnimation>().enabled = false;
         }
-
-        changeTurn();
+		checkActivated ();
+		changeTurn();
     }
 
     // Update is called once per frame
