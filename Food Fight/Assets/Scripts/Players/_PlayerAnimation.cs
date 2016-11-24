@@ -327,7 +327,7 @@ public class _PlayerAnimation : MonoBehaviour
             GameObject.Find("Weapons").GetComponent<_ControlWeapons>().controlWeapons(GetComponent<_Animate>().Weapon, spawner);
             GameObject.Find("TurnManager").GetComponent<_TurnController>().fire = true;
             //FinishAnimation();
-            weapon = -1;
+            //weapon = -1;
         }
     }
 }
