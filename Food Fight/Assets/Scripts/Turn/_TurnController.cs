@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
-
+using Syrinj;
 
 public class _TurnController : MonoBehaviour {
 
@@ -35,6 +35,8 @@ public class _TurnController : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
+
+        Manager.getInstance().getMachine().changeState(PlayingState.getInstance());
 
         objects = new List<GameObject>();
         objects2 = new List<GameObject>();

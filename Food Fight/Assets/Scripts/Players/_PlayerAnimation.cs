@@ -1,5 +1,6 @@
-﻿    using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
+using Syrinj;
 
 [RequireComponent(typeof(Animator))]
 public class _PlayerAnimation : MonoBehaviour
@@ -14,7 +15,11 @@ public class _PlayerAnimation : MonoBehaviour
     private int weapon;
     
     private MenuScript menu;
+
+    [Inject]
     private _TurnController turn;
+
+    [Inject]
     private _WeaponMenu weapons;
 
     public AudioClip audioDeath;
@@ -41,9 +46,6 @@ public class _PlayerAnimation : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        menu = GameObject.Find("Menu Manager").GetComponent<MenuScript>();
-        turn = GameObject.Find("TurnManager").GetComponent<_TurnController>();
-        weapons = GameObject.Find("Weapons").GetComponent<_WeaponMenu>();
         weapon = -1;
         if(this.tag == "Player2")
             transform.eulerAngles = new Vector2(0, 180);
@@ -66,8 +68,10 @@ public class _PlayerAnimation : MonoBehaviour
 
     public void atirar()
     {
-        if (gameObject.tag == "Player" && menu.menuAtivo)
+        var state = Manager.getInstance().getMachine().getCurrentState();
+        if (gameObject.tag == "Player" && state is WeaponState)
         {
+            
             if (Input.GetButtonDown("P1_[]") && weapon > -1)
             {
                 if (weapon > 1)
@@ -77,7 +81,7 @@ public class _PlayerAnimation : MonoBehaviour
             }
         }
 
-        if (gameObject.tag == "Player2" && menu.menuAtivo)
+        if (gameObject.tag == "Player2" && state is PausedState)
         {
             if (Input.GetButtonDown("P2_[]") && weapon > -1)
             {
@@ -98,7 +102,7 @@ public class _PlayerAnimation : MonoBehaviour
         {
             if (Input.GetButtonDown("SELECT1"))
             {
-                GameObject.Find("Menu Manager").GetComponent<MenuScript>().clickWeapons();
+                Manager.getInstance().getMachine().changeState(WeaponState.getInstance());
             }
 
             //if (Input.GetButtonDown("P1_L1"))
@@ -111,7 +115,7 @@ public class _PlayerAnimation : MonoBehaviour
             //    turn.flagTim = true;
             //}
 
-            if (menu.menuAtivo)
+            if (Manager.getInstance().getMachine().getCurrentState() is PausedState)
             {
                 float x = Input.GetAxis("P1_Horizontal");
                 float xT = Input.GetAxis("Horizontal");
@@ -169,7 +173,7 @@ public class _PlayerAnimation : MonoBehaviour
         {
             if (Input.GetButtonDown("SELECT2"))
             {
-                GameObject.Find("Menu Manager").GetComponent<MenuScript>().clickWeapons();
+                Manager.getInstance().getMachine().changeState(WeaponState.getInstance());
             }
 
             //if (Input.GetButtonDown("P2_L1"))
@@ -182,7 +186,7 @@ public class _PlayerAnimation : MonoBehaviour
             //    turn.flagTim = true;
             //}
 
-            if (menu.menuAtivo)
+            if (Manager.getInstance().getMachine().getCurrentState() is PausedState)
             {
                 float x = Input.GetAxis("P2_Horizontal");
                 float xT = Input.GetAxis("Horizontal");
