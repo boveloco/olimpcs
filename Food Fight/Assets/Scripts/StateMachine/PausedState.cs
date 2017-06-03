@@ -8,7 +8,7 @@ using Syrinj;
 
 class PausedState : State 
 {
-    public GameObject menuPause;
+    private GameObject menuPause;
 
     public static PausedState instance;
 
@@ -25,22 +25,19 @@ class PausedState : State
     public void enter()
     {
         menuPause.SetActive(true);
+        Time.timeScale = 0;
+
     }
 
     public void exit()
     {
         menuPause.SetActive(false);
+        Time.timeScale = 1;
+
     }
 
     public void update()
     {
-        Time.timeScale = (Time.timeScale - 1) * -1;
-        wait();
-    }
-
-    IEnumerator wait()
-    {
-        yield return new WaitForSeconds(1.0f);
     }
 
     public void setMenu(GameObject g)

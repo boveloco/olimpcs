@@ -22,8 +22,17 @@ public class MenuScript : MonoBehaviour {
 
     public void chooseSceene()
     {
-        Time.timeScale = 1;
         Application.LoadLevel(nextLevel);
+    }
+
+    public void chooseSceene(string s)
+    {
+        Application.LoadLevel(s);
+    }
+
+    public void restart()
+    {
+        chooseSceene("noite_scene");
     }
 
     public void togglePause()

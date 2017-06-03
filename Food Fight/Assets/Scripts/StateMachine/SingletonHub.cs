@@ -20,16 +20,10 @@ class SingletonHub
         manager = Manager.getInstance();
     }
 
-    [Provides]
-    [Singleton]
     public PausedState pausedState;
 
-    [Provides]
-    [Singleton]
     public PlayingState playinState;
 
-    [Provides]
-    [Singleton]
     public WeaponState weaponState;
 
     [Provides]

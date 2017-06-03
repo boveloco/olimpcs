@@ -5,10 +5,10 @@ using Syrinj;
 public class DarkNightProvider : MonoBehaviour {
 
     [Provides("Weapon")]
-    public GameObject weaponMenu;
+    public GameObject weaponMenu; //editor
 
     [Provides("Menu")]
-    public GameObject pauseMenu;
+    public GameObject pauseMenu; //editor
 
     [Provides]
     [FindObjectOfType(typeof(_WeaponMenu))]

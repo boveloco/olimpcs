@@ -8,7 +8,6 @@ using Syrinj;
 
 class WeaponState : State
 {
-
     private GameObject weaponMenu;
 
     public static WeaponState instance;

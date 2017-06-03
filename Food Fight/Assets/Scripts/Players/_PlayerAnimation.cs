@@ -20,7 +20,6 @@ public class _PlayerAnimation : MonoBehaviour
     [Inject]
     public MenuScript menu;
 
-
     [Inject]
     public _WeaponMenu weapons;
 
@@ -57,6 +56,7 @@ public class _PlayerAnimation : MonoBehaviour
         
         FinishAnimation();
 	}
+
 	
 	// Update is called once per frame
 	void Update ()
@@ -71,7 +71,7 @@ public class _PlayerAnimation : MonoBehaviour
     public void atirar()
     {
         var state = Manager.getInstance().getMachine().getCurrentState();
-        if (gameObject.tag == "Player" && state.GetType() == typeof(PlayingState))
+        if (gameObject.tag == "Player" && state is PlayingState)
         {
             
             if (Input.GetButtonDown("P1_[]") && weapon > -1)
@@ -148,7 +148,7 @@ public class _PlayerAnimation : MonoBehaviour
                     rb.AddForce(Vector2.up * forcesJump);
                 }
             }
-            else
+            else if (Manager.getInstance().getMachine().getCurrentState() is WeaponState)
             {
                 if (Input.GetButtonDown("P1_X"))
                 {
