@@ -9,8 +9,7 @@ using Syrinj;
 class WeaponState : State
 {
 
-    [Inject]
-    private GameObject menuWeapons;
+    private GameObject weaponMenu;
 
     public static WeaponState instance;
 
@@ -23,14 +22,18 @@ class WeaponState : State
         return instance;
     }
 
+    private WeaponState()
+    {
+    }
+
     public void enter()
     {
-        menuWeapons.SetActive(true);
+        weaponMenu.SetActive(true);
     }
 
     public void exit()
     {
-        menuWeapons.SetActive(false);
+        weaponMenu.SetActive(false);
     }
 
     public void update()
@@ -42,6 +45,11 @@ class WeaponState : State
     IEnumerator wait()
     {
         yield return new WaitForSeconds(1.0f);
+    }
+
+    public void setWeapon(GameObject g)
+    {
+        weaponMenu = g;
     }
 }
 

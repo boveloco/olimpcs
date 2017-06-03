@@ -43,7 +43,7 @@ public class _ControlWeapons : MonoBehaviour {
                 {
                     count = 0;
                     instantiate = false;
-                    GameObject.Find("TurnManager").GetComponent<_TurnController>().flagTim = true;
+                    FindObjectOfType<_TurnController>().flagTim = true;
                 }
                 timer = 0;
 

@@ -1,4 +1,5 @@
 ﻿using Syrinj;
+using UnityEngine;
 
 class StateMachine
 {
@@ -22,8 +23,9 @@ class StateMachine
 
         currentState = s;
 
-        currentState.enter();       
+        currentState.enter();
 
+        Debug.Log(s);
     }
 
     public void update()

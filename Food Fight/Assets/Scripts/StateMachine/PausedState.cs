@@ -8,13 +8,11 @@ using Syrinj;
 
 class PausedState : State 
 {
-    [Inject]
-    [Instance]
     public GameObject menuPause;
 
     public static PausedState instance;
 
-    public static State getInstance()
+    public static PausedState getInstance()
     {
         if(instance == null)
         {
@@ -37,11 +35,17 @@ class PausedState : State
     public void update()
     {
         Time.timeScale = (Time.timeScale - 1) * -1;
+        wait();
     }
 
     IEnumerator wait()
     {
         yield return new WaitForSeconds(1.0f);
+    }
+
+    public void setMenu(GameObject g)
+    {
+        this.menuPause = g;
     }
 }
 

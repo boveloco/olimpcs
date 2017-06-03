@@ -12,15 +12,17 @@ public class _PlayerAnimation : MonoBehaviour
     //spawna as bullets
     public Transform spawner;
         
-    private int weapon;
-    
-    private MenuScript menu;
+    protected int weapon;
 
     [Inject]
-    private _TurnController turn;
+    protected _TurnController turn;
 
     [Inject]
-    private _WeaponMenu weapons;
+    public MenuScript menu;
+
+
+    [Inject]
+    public _WeaponMenu weapons;
 
     public AudioClip audioDeath;
     public AudioSource audioS;
@@ -69,7 +71,7 @@ public class _PlayerAnimation : MonoBehaviour
     public void atirar()
     {
         var state = Manager.getInstance().getMachine().getCurrentState();
-        if (gameObject.tag == "Player" && state is WeaponState)
+        if (gameObject.tag == "Player" && state.GetType() == typeof(PlayingState))
         {
             
             if (Input.GetButtonDown("P1_[]") && weapon > -1)
@@ -81,7 +83,7 @@ public class _PlayerAnimation : MonoBehaviour
             }
         }
 
-        if (gameObject.tag == "Player2" && state is PausedState)
+        if (gameObject.tag == "Player2" && state is PlayingState)
         {
             if (Input.GetButtonDown("P2_[]") && weapon > -1)
             {
@@ -115,7 +117,7 @@ public class _PlayerAnimation : MonoBehaviour
             //    turn.flagTim = true;
             //}
 
-            if (Manager.getInstance().getMachine().getCurrentState() is PausedState)
+            if (Manager.getInstance().getMachine().getCurrentState() is PlayingState)
             {
                 float x = Input.GetAxis("P1_Horizontal");
                 float xT = Input.GetAxis("Horizontal");
@@ -186,7 +188,7 @@ public class _PlayerAnimation : MonoBehaviour
             //    turn.flagTim = true;
             //}
 
-            if (Manager.getInstance().getMachine().getCurrentState() is PausedState)
+            if (Manager.getInstance().getMachine().getCurrentState() is PlayingState)
             {
                 float x = Input.GetAxis("P2_Horizontal");
                 float xT = Input.GetAxis("Horizontal");
@@ -218,7 +220,7 @@ public class _PlayerAnimation : MonoBehaviour
                     rb.AddForce(Vector2.up * forcesJump);
                 }
             }
-            else
+            else if (Manager.getInstance().getMachine().getCurrentState() is WeaponState)
             {
                 if (Input.GetButtonDown("P2_X"))
                 {
@@ -326,10 +328,10 @@ public class _PlayerAnimation : MonoBehaviour
 
     private void shoot()
     {
-        if (!GameObject.Find("TurnManager").GetComponent<_TurnController>().fire)
+        if (Manager.getInstance().getMachine().getCurrentState() is PlayingState)
         {
             GameObject.Find("Weapons").GetComponent<_ControlWeapons>().controlWeapons(GetComponent<_Animate>().Weapon, spawner);
-            GameObject.Find("TurnManager").GetComponent<_TurnController>().fire = true;
+            turn.fire = true;
             //FinishAnimation();
             //weapon = -1;
         }

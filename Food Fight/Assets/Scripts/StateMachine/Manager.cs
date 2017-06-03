@@ -6,9 +6,9 @@ using UnityEngine;
 using System.Collections;
 using Syrinj;
 
-class Manager: MonoBehaviour
+class Manager
 {
-    public static Manager instance;
+    public static Manager instance = null;
 
     public static Manager getInstance()
     {
@@ -28,7 +28,7 @@ class Manager: MonoBehaviour
     private StateMachine stateMachine;
 
 
-    void Update()
+    public void Update()
     {
         stateMachine.update();
     }

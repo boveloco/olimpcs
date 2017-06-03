@@ -6,8 +6,13 @@ public class _Weapon : MonoBehaviour {
     protected int damage = 0;
     public GameObject obj;
 
+    public _Weapon()
+    {
+
+    }
+
     [Inject]
-    private _TurnController turn;
+    protected _TurnController turn;
 
     void Start()
     {

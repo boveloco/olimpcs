@@ -20,6 +20,8 @@ public class _TurnController : MonoBehaviour {
 
     public bool fire = false;
 
+    Manager manager = Manager.getInstance();
+
     //false = green
     [HideInInspector]
     public bool team = false;
@@ -66,6 +68,7 @@ public class _TurnController : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        manager.Update();
         verifyEnd();
         setTimer();
 
