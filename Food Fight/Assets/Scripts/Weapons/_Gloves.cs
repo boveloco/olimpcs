@@ -20,4 +20,7 @@ public class _Gloves : MonoBehaviour {
 	void addForce(){
 		player.GetComponent<Rigidbody2D> ().AddForce (Vector3.up * 400);
 	}
+    protected new void OnDestroy()
+    {
+    }
 }

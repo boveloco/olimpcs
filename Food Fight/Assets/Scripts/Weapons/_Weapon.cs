@@ -1,9 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Syrinj;
 
 public class _Weapon : MonoBehaviour {
     protected int damage = 0;
     public GameObject obj;
+
+    public _Weapon()
+    {
+
+    }
+
+    [Inject]
+    protected _TurnController turn;
 
     void Start()
     {
@@ -29,19 +38,19 @@ public class _Weapon : MonoBehaviour {
 
     protected void OnDestroy()
     {
-        GameObject.Find("TurnManager").GetComponent<_TurnController>().flagTim = true;
+        turn.flagTim = true;
     }
 
     protected void verifyPosition()
     {
         if (transform.position.y < -4.0f)
         {
-            GameObject.Find("TurnManager").GetComponent<_TurnController>().flagTim = true;
+            turn.flagTim = true;
             Destroy(this);
         }
         if (transform.position.x < -140f || transform.position.x > -104f)
         {
-            GameObject.Find("TurnManager").GetComponent<_TurnController>().flagTim = true;
+            turn.flagTim = true;
             Destroy(this);
         }
     }

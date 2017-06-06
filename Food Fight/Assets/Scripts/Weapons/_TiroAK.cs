@@ -6,6 +6,7 @@ public class _TiroAK : _Weapon {
     // Use this for initialization
     void Start()
     {
+        this.turn = FindObjectOfType<_TurnController>();
         damage = 10;
     }
 

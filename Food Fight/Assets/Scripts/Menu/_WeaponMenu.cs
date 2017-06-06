@@ -14,7 +14,7 @@ public class _WeaponMenu : MonoBehaviour {
         if (weapon > MAX_WEAPON_SIZE)
             return;
 
-        GameObject.Find("Menu Manager").SendMessage("clickWeapons");
+        GameObject.Find("Menu Manager").SendMessage("toggleWeapon");
         _target = GameObject.Find("TurnManager").GetComponent<_TurnController>().getPlayerOnTurn();
         _pAnim = _target.GetComponent<_PlayerAnimation>();
         _pAnim.Weapon = weapon;

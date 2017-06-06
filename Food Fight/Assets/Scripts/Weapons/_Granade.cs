@@ -14,7 +14,7 @@ public class _Granade : _Weapon {
     void Start () {
 	    damage = 50;
         //audioS = GameObject.Find("Camera").GetComponent<AudioSource>() as AudioSource;
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {

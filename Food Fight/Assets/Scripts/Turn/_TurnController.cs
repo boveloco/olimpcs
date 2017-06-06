@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
-
+using Syrinj;
 
 public class _TurnController : MonoBehaviour {
 
@@ -20,6 +20,8 @@ public class _TurnController : MonoBehaviour {
 
     public bool fire = false;
 
+    Manager manager = Manager.getInstance();
+
     //false = green
     [HideInInspector]
     public bool team = false;
@@ -35,6 +37,8 @@ public class _TurnController : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
+
+        Manager.getInstance().getMachine().changeState(PlayingState.getInstance());
 
         objects = new List<GameObject>();
         objects2 = new List<GameObject>();
@@ -64,6 +68,7 @@ public class _TurnController : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        manager.Update();
         verifyEnd();
         setTimer();
 
